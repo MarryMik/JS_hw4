@@ -1,0 +1,72 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+.comment-box{
+    
+    height: fit-content;
+    @include padding(41,34,60,99);
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+    @include margin(0,0,0,61);
+    &__photo-wrap{
+        @include size(130,131);
+        border-radius: 35px 0px;
+        overflow: hidden;
+        position: absolute;
+        left:find_size(-61, 100vw, $width-main);
+        top: 15%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        &>img{
+            @include size(130, 164);
+        }
+    }
+    &__header-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include size(432,0);
+        height: fit-content;
+        &>div{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+    }
+    &__name{
+        font-family: OpenSans;
+        font-weight: 700;
+        @include font_size(24,33);
+        color: $header-color;
+        &+p{
+            @include font_size(16, 21.79);
+            color: $text-color;
+        }
+    }
+    &__quotes{
+        font-family: Monda;
+        font-weight: 600;
+        @include font_size(96, 10);
+        color: $border-el-color;
+    }
+    &__text{
+        font-family: OpenSans;
+        font-weight: 400;
+        color: $text-color;
+        @include font_size(18,28);
+        &-wrap{
+            @include size(432,84);
+            height: fit-content;
+            @include margin(8,0,0,0);
+        }
+    }
+    &__right-wrap{
+        //width:100%;
+    }
+}

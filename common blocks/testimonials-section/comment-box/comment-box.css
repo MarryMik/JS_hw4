@@ -1,0 +1,125 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Monda;
+  src: url("/fonts/Monda/Monda-Regular.ttf");
+}
+.comment-box {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 3.7962962963vh;
+  padding-right: 1.7708333333vw;
+  padding-bottom: 5.5555555556vh;
+  padding-left: 5.15625vw;
+  position: relative;
+  background: #FFFFFF;
+  -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+          box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+  border-radius: 70px 0px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 3.1770833333vw;
+}
+.comment-box__photo-wrap {
+  width: 6.7708333333vw;
+  height: 12.1296296296vh;
+  border-radius: 35px 0px;
+  overflow: hidden;
+  position: absolute;
+  left: -3.1770833333vw;
+  top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.comment-box__photo-wrap > img {
+  width: 6.7708333333vw;
+  height: 15.1851851852vh;
+}
+.comment-box__header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22.5vw;
+  height: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.comment-box__header-wrap > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.comment-box__name {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 2.2222222222vh;
+  line-height: 3.0555555556vh;
+  color: #212121;
+}
+.comment-box__name + p {
+  font-size: 1.4814814815vh;
+  line-height: 2.0175925926vh;
+  color: #646464;
+}
+.comment-box__quotes {
+  font-family: Monda;
+  font-weight: 600;
+  font-size: 8.8888888889vh;
+  line-height: 0.9259259259vh;
+  color: #B0855B;
+}
+.comment-box__text {
+  font-family: OpenSans;
+  font-weight: 400;
+  color: #646464;
+  font-size: 1.6666666667vh;
+  line-height: 2.5925925926vh;
+}
+.comment-box__text-wrap {
+  width: 22.5vw;
+  height: 7.7777777778vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0.7407407407vh;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}/*# sourceMappingURL=comment-box.css.map */

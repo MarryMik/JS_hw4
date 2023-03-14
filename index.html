@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="common blocks/ad-section/ad-section.css">
     <link rel="stylesheet" href="common blocks/our-service-section/our-service-section.css">
     <link rel="stylesheet" href="common blocks/about-us-section/about-us-section.css">
+    <link rel="stylesheet" href="common blocks/completed-work-section/completed-work-section.css">
+    <link rel="stylesheet" href="common blocks/completed-work-section/achiev-boxes/achiev-boxes.css">
+    <link rel="stylesheet" href="common blocks/testimonials-section/testimonials.css">
+    <link rel="stylesheet" href="common blocks/testimonials-section/comment-box/comment-box.css">
 </head>
 <body>
     <nav class="nav-bar">
@@ -156,81 +160,90 @@
         <img class="about-us__decoration" src="img/decoration-aboutus2.svg">
     </div>
     
-    <div class="completed-work-section">
+    <div class="compl-work">
         <div class="compl-work__header-wrap">
-            <p class="compl-work__header">3000+ Completed Work
+            <p class="compl-work__header">3000+ Completed Work<br>
                 Which WE have Successfully Done</p>
         </div>
-        <div class="compl-work__achiev-boxes">
-            <div class="achiev-boxes__box_primary">
+        <div class="achiev-boxes">
+            <div class="achiev-boxes__box achiev-boxes__box_primary">
                 <p class="achiev-box__number">980</p>
                 <p class="achiev-box__text">Project</p>
             </div>
-            <div class="achiev-boxes__box_secondary">
+            <div class="achiev-boxes__box achiev-boxes__box_secondary">
                 <p class="achiev-box__number">520</p>
                 <p class="achiev-box__text">Happy Client</p>
             </div>
-            <div class="achiev-boxes__box_tertiary">
+            <div class="achiev-boxes__box achiev-boxes__box_tertiary">
                 <p class="achiev-box__number">330</p>
                 <p class="achiev-box__text">Winners</p>
             </div>
-            <div class="achiev-boxes__box_quaternary">
+            <div class="achiev-boxes__box achiev-boxes__box_quaternary">
                 <p class="achiev-box__number">120</p>
                 <p class="achiev-box__text">Recoment</p>
             </div>
-            <img class="achieve-boxes__vector_primary" src="img/Vector1.svg">
-            <img class="achieve-boxes__vector_secondary" src="img/Vector2.svg">
-            <img class="achieve-boxes__vector_tertiary" src="img/Vector3.svg">
+            <img class="achiev-boxes__vector achiev-boxes__vector_primary" src="img/Vector1.svg">
+            <img class="achiev-boxes__vector achiev-boxes__vector_secondary" src="img/Vector2.svg">
+            <img class="achiev-boxes__vector achiev-boxes__vector_tertiary" src="img/Vector3.svg">
         </div>
         <img class="compl-work__decoration" src="img/decoration-complwork.svg">
     </div>
-    <div class="testimonials-section">
+
+    <div class="testimonials">
         <a class="testimonials__anchor" name="testimonials">
             <p class="testimonials__tag">TESTIMONIALS</p>
         </a>
         <p class="testimonials__header">Client says about us</p>
-        <div class="testimonials__buttons-wrap">
-            <button class="testimonials__button_left">
-                <img class="test-butn__icon_left" src="img/butn-arrow.svg">
-            </button>
-            <button class="testimonials__button_rigth">
-                <img class="test-butn__icon_left" src="img/butn-arrow.svg">
-            </button>
-        </div>
-        
-        <div class="testimonials__comments-section">
-            <div class="testimonials__comment-box">
-                <div class="comment__photo-wrap">
-                    <img class="comment__photo" src="img/man-photo.svg">
-                </div>
-                <div class="comment__right-wrap">
-                    <div class="comment__header-wrap">
-                        <p class="comment__name">Louis Saville</p>
-                        <p class="comment__job-title">/CEO at Google inc</p>
-                        <p class="comment__quotes">”</p>
-                    </div>
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.</p>
-                </div>
+        <div class="testimonials__wrapper-content">
+            <div class="testimonials__buttons-wrap">
+                <button class="testimonials__button testimonials__button_left">
+                    <img class="test-butn__icon_left" src="img/butn-arrow.svg">
+                </button>
+                <button class="testimonials__button testimonials__button_right">
+                    <img class="test-butn__icon_right" src="img/butn-arrow.svg">
+                </button>
             </div>
-            <div class="testimonials__comment-box">
-                <div class="comment__photo-wrap">
-                    <img class="comment__photo" src="img/man-photo.svg">
-                </div>
-                <div class="comment__right-wrap">
-                    <div class="comment__header-wrap">
-                        <p class="comment__name">Louis Saville</p>
-                        <p class="comment__job-title">/CEO at Google inc</p>
-                        <p class="comment__quotes">”</p>
+            <div class="testimonials__comment-wrapper">
+                <div class="testimonials__comments-section">
+                    <div class="comment-box">
+                        <div class="comment-box__photo-wrap">
+                            <img class="comment-box__photo" src="img/man-photo.svg">
+                        </div>
+                        <div class="comment-box__header-wrap">
+                            <div class="header__wrap_primary">
+                                <p class="comment-box__name">Louis Saville</p>
+                                <p class="comment-box__job-title">/CEO at Google inc</p>
+                            </div>
+                            <p class="comment-box__quotes">”</p>
+                        </div>
+                        <div class="comment-box__text-wrap">
+                            <p class="comment-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua.</p>
+                        </div>                      
                     </div>
-                    <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.</p>
+                    <div class="comment-box">
+                        <div class="comment-box__photo-wrap">
+                            <img class="comment-box__photo" src="img/man-photo.svg">
+                        </div>
+                        <div class="comment-box__header-wrap">
+                            <div class="header__wrap_primary">
+                                <p class="comment-box__name">Louis Saville</p>
+                                <p class="comment-box__job-title">/CEO at Google inc</p>
+                            </div>
+                            <p class="comment-box__quotes">”</p>
+                        </div>
+                        <div class="comment-box__text-wrap">
+                            <p class="comment-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua.</p>
+                        </div>                      
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="news-section">
         <a class="news__anchor" name="latest_news">
             <p class="news__tag">LATEST NEWS</p>
