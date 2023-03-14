@@ -1,0 +1,85 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.our-service-section{
+    width: 100%;
+    height: fit-content;
+    @include margin( 0,0,143.16,0);
+}
+.our-service{
+    &__tag-text{
+        font-family: Poppins;
+        font-weight: 600;
+        @include font_size(20,28);
+        color: $text-color;
+        @include margin(0, 0, 0, 225.98);
+
+    }
+    &__header{
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(48,78);
+        color: $header-color;
+        @include margin(0, 0, 0,225.98);
+    }
+    &__filters{
+        @include margin(0, 0, 110.69,225.98);
+        display: flex;
+        flex-direction: row;
+    }
+    &__filter{
+        @include margin(0, 77.87, 0,0);
+        background-color: $butn-color;
+        @include size(206.67, 46.04);
+        border-radius: 20px;
+        &-text{
+            font-family: OpenSans;
+            font-weight: 700;
+            @include font_size(16, 78);
+            color: #FFFFFF;
+        }   
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+        border-radius: 60px 0px;
+        @include size(412.43, 128.8);
+        @include padding(28.42, 24.16,7.35,40.64);
+        @include margin(44.3,44.5,44.3,44.5);
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        &_architect{
+            background-color: $butn-signUp-color;
+        }
+        p[class$='_architect']{
+            color:#FFFFFF;
+        }
+    }
+    &-card__image{
+        @include margin(0, 22, 0,0);
+        @include size(43.93,28.43);
+    }
+    &-card__text-wrapper{
+        @include size(336,0);
+        height: fit-content;
+    }
+    &-card__header{
+        font-family: OpenSans;
+        font-weight: 700;
+        @include font_size(24, 20);
+        color: $header-color;
+    }
+    &-card__text{
+        font-family: OpenSans;
+        font-weight: 400;
+        @include font_size(18, 28);
+        color:$text-color;
+    }
+}

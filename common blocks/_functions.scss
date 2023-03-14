@@ -1,0 +1,32 @@
+@import "variables";
+@function find-size($val1, $val2, $val3){
+    @if $val1==0{
+        @return 0;
+    }@else{
+        @return calc(($val1*$val2)/$val3)
+    }
+};
+
+@mixin size($w, $h, $w_res: $width-main, $h_res: $height-main){
+    width: find-size($w,100vw, $w_res);
+    height: find-size($h,100vh,$h_res);
+}
+
+@mixin margin($t, $r, $b, $l, $h_res: $height-main, $w_res: $width-main){
+    margin-top: find-size($t,100vh,$h_res);
+    margin-right: find-size($r,100vw, $w_res);
+    margin-bottom: find-size($b,100vh,$h_res);
+    margin-left: find-size($l,100vw, $w_res);
+    
+}
+@mixin padding($t, $r, $b, $l, $h_res: $height-main, $w_res: $width-main){
+    padding-top: find-size($t,100vh,$h_res);
+    padding-right: find-size($r,100vw, $w_res);
+    padding-bottom: find-size($b,100vh,$h_res);
+    padding-left: find-size($l,100vw, $w_res);
+    
+}
+@mixin font_size($size, $line_height, $h_resolution: $height-main){
+    font-size: find-size($size,100vh,$h_resolution);
+    line-height: find-size($line_height,100vh,$h_resolution);
+}

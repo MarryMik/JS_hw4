@@ -1,0 +1,175 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway/Raleway-Regular.ttf");
+}
+.about-us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.about-us__block {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 18.412962963vh;
+  margin-left: 0;
+}
+.about-us__block_primary, .about-us__block_quternary {
+  width: 37.2838541667vw;
+  height: 68.7527777778vh;
+  width: 100%;
+  position: relative;
+}
+.about-us__picture-wrap {
+  width: 35.359375vw;
+  height: 65.8509259259vh;
+  border-radius: 140px 0px;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 2.9027777778vh;
+}
+.about-us__picture-wrap_below {
+  left: 0;
+  top: 0;
+}
+.about-us__picture-bordshadow {
+  width: 35.359375vw;
+  height: 65.8509259259vh;
+  border-radius: 140px 0px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  border: 2px solid #B0855B;
+  right: 1.871875vw;
+}
+.about-us__picture-bordshadow_below {
+  left: 1.6119791667vw;
+  top: 2.5398148148vh;
+}
+.about-us__block_secondary {
+  padding-top: 1.4101851852vh;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 6.7479166667vw;
+  width: 28.4375vw;
+  height: 50.9259259259vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.about-us__tag-text {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #646464;
+  font-size: 1.8518518519vh;
+  line-height: 2.7777777778vh;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 5.462962963vh;
+  margin-left: 0;
+}
+.about-us__header-wrap {
+  width: 25.5114583333vw;
+  height: 11.4398148148vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.about-us__header-wrap > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 4.4444444444vh;
+  line-height: 5.2777777778vh;
+  color: #212121;
+}
+.about-us__descr-wrap {
+  width: 28.3229166667vw;
+  height: 24.0842592593vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.1722222222vh;
+  margin-left: 0;
+}
+.about-us__descr-wrap > p {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 1.6666666667vh;
+  line-height: 2.7777777778vh;
+  color: #646464;
+}
+.about-us__butn {
+  background-color: #37806B;
+  width: 7.3916666667vw;
+  height: 3.8824074074vh;
+  border-radius: 20px 0px;
+}
+.about-us__butn-text {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 1.4814814815vh;
+  line-height: 0;
+  color: #FFFFFF;
+}
+.about-us__butn_below {
+  width: 9.0932291667vw;
+  height: 4.0611111111vh;
+}
+.about-us__block_tertiary {
+  width: 37.2838541667vw;
+  height: 68.7527777778vh;
+  width: 100%;
+  position: relative;
+}
+.about-us__block_tertiary > div {
+  width: 37.2838541667vw;
+  height: 68.7527777778vh;
+  position: absolute;
+  right: 0;
+}
+.about-us__header-wrap_below {
+  width: 33.7755208333vw;
+  height: 18.5009259259vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 3.3203703704vh;
+  margin-left: 0;
+}
+.about-us__header-wrap_below > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 4.6296296296vh;
+  line-height: 6.0185185185vh;
+  color: #212121;
+}
+.about-us__big-number {
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: url("/img/20-backgr.svg");
+  color: transparent;
+  font-size: 26.6666666667vh;
+  line-height: 2.5925925926vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  height: 26.6666666667vh;
+  background-position: top 53.7037037037vh left 35.4166666667vw;
+  font-family: OpenSans;
+}/*# sourceMappingURL=about-us-section.css.map */
