@@ -16,24 +16,35 @@
     <link rel="stylesheet" href="common blocks/testimonials-section/comment-box/comment-box.css">
     <link rel="stylesheet" href="common blocks/news-section/news-section.css">
     <link rel="stylesheet" href="common blocks/form-section/form-section.css">
+    <link rel="stylesheet" href="common blocks/footer/footer.css">
+    <link rel="stylesheet" href="common blocks/footer/social-board/social-board.css">
+    <link rel="stylesheet" href="common blocks/nav-bar/progress-bar/progress-bar.css">
+
+    <script src="common blocks/nav-bar/nav-bar.js"></script>
+    <script src="common blocks/nav-bar/progress-bar/progress-bar.js"></script>
+    
 </head>
 <body>
-    <nav class="nav-bar">
-        <img class="nav-bar__logo" src="img/Logo.svg">
-        <div class="nav-bar__links-wrap">
-            <div class="nav-bar__links">
-                <a class="nav-bar__link" href=""><p class="nav-bar__link-text">HOME</p></a>
-                <a class="nav-bar__link" href=""><p class="nav-bar__link-text">PROJECT</p></a>
-                <a class="nav-bar__link" href="" ><p class="nav-bar__link-text">SERVICES</p></a>
-                <a class="nav-bar__link" href=""><p class="nav-bar__link-text">ABOUT</p></a>
-                <a class="nav-bar__link" href=""><p class="nav-bar__link-text">BLOG</p></a>
-                <a class="nav-bar__link" href=""><p class="nav-bar__link-text">SHOP</p></a>
-                <a class="nav-bar__link"href=""><p class="nav-bar__link-text">CONTACT</p></a>
+    <div class="nav-bar__wrap" id="nav">
+        <nav class="nav-bar">
+            <img class="nav-bar__logo" src="img/Logo.svg">
+            <div class="nav-bar__links-wrap">
+                <div class="nav-bar__links">
+                    <a class="nav-bar__link" href="index.html"><p class="nav-bar__link-text">HOME</p></a>
+                    <a class="nav-bar__link" href="#project"><p class="nav-bar__link-text">PROJECT</p></a>
+                    <a class="nav-bar__link" href="#what_we_do" ><p class="nav-bar__link-text">SERVICES</p></a>
+                    <a class="nav-bar__link" href="#about-us"><p class="nav-bar__link-text">ABOUT</p></a>
+                    <a class="nav-bar__link" href="#latest_news"><p class="nav-bar__link-text">BLOG</p></a>
+                    <a class="nav-bar__link" href="#testimonials"><p class="nav-bar__link-text">SHOP</p></a>
+                    <a class="nav-bar__link"href="#modern_interior"><p class="nav-bar__link-text">CONTACT</p></a>
+                </div>
+                <button class="nav-bar__button" ><p class="nav-bar__button-text">Sign Up</p></button>
             </div>
-            <button class="nav-bar__button"><p class="nav-bar__button-text">Sign Up</p></button>
+        </nav>
+        <div class="progress-bar__wrap">
+            <div class="progress-bar" id="scroll-progress"></div>
         </div>
-    </nav>
-
+    </div>
     <div class="ad-section">
         <div class="ad__left-wrap">
             <a class="ad__tag-anchor" name="modern_interior"><p class="ad__tag-text">MODERN INTERIOR</p></a>
@@ -158,11 +169,12 @@
                 <img class="about-us__picture_below" src="img/about-us-img2.svg">
             </div>            
         </div>
-        <img class="about-us__decoration" src="img/decoration-aboutus.svg">
-        <img class="about-us__decoration" src="img/decoration-aboutus2.svg">
+        <img class="about-us__decoration about-us__decoration_primary" src="img/decoration-aboutus.svg">
+        <img class="about-us__decoration about-us__decoration_secondary" src="img/decoration-aboutus2.svg">
     </div>
     
     <div class="compl-work">
+        <a name="project"></a>
         <div class="compl-work__header-wrap">
             <p class="compl-work__header">3000+ Completed Work<br>
                 Which WE have Successfully Done</p>
@@ -293,18 +305,21 @@
         <img class="news__decoration" src="img/decoration-latestnews.svg">
     </div>
 
-    <div class="form-section">
+    <div class="form">
         <p class="form__header">DON’T FORGET TO SIGN UP</p>
-        <hr class="form__line">
+        <div class="form__line"></div>
         <div class="form__text-wrap">
             <p class="form__text">Find out early about all upcoming promotions and new product releases with
                 our newsletter.</p>
         </div>
-        <input type="text" class="form__name" required placeholder="Enter your name.....">
-        <input type="text" class="form__surname" required placeholder="Enter your surname.....">
-        <input type="email" class="form__email" required placeholder="Enter your email.....">
-        <input type="submit" class="form__button" value="SUBSCRIBE">
+        <div class="form__inputs-wrap">
+            <input type="text" class="form__name form__input-text" required placeholder="Enter your name.....">
+            <input type="text" class="form__surname form__input-text" required placeholder="Enter your surname.....">
+            <input type="email" class="form__email form__input-text" required placeholder="Enter your email.....">
+            <input type="submit" class="form__button" value="SUBSCRIBE">
+        </div>
     </div>
+    
     <div class="footer">
         <img class="footer__decoration" src="img/decoration-footer.svg">
         <div class="footer__main-part">
@@ -331,7 +346,7 @@
             </div>
             <div class="footer__links-wrap footer__links-wrap_tertiary">
                 <p class="footer__headline footer__headline_tertiary">Contact us</p>
-                <div class="footer__adress-box"><p class="footer__link-text">Sagrada Familia, Hrba Strett Front USA</p></div>
+                <div class="footer__adress-box"><p class="footer__link-text">Sagrada Familia, Herba Strett Front USA</p></div>
                 <a class="footer__link_email"href="mailto: brandoxide@gmail.com"><p class="footer__link-text">brandoxide@gmail.com</p></a>
                 <a class="footer__link_phone" href="tel:002-568423591"><p class="footer__link-text">002-568423591</p></a>
             </div>
@@ -339,22 +354,22 @@
                 <p class="footer__headline footer__headline_quaternary">Follow us</p>
 
                 <div class="social-board">
-                    <a href="https://m.facebook.com/">
+                    <a class="social-board__link" href="https://m.facebook.com/">
                         <div class="social-board__elem">
                             <img class="social-board__image social-board__image_primary" src="img/facebook_icon.svg">
                         </div>
                     </a>
-                    <a href="https://twitter.com/">
+                    <a class="social-board__link" href="https://twitter.com/">
                         <div class="social-board__elem">
                             <img class="social-board__image social-board__image_secondary" src="img/twitter.svg">
                         </div>
                     </a>
-                    <a href="https://www.instagram.com/">
+                    <a class="social-board__link" href="https://www.instagram.com/">
                         <div class="social-board__elem">
                             <img class="social-board__image social-board__image_tertiary" src="img/instagram.svg">
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a class="social-board__link" href="https://www.linkedin.com/">
                         <div class="social-board__elem">
                             <img class="social-board__image social-board__image_quaternary" src="img/linked-in-icon.svg">
                         </div>
@@ -365,7 +380,7 @@
         </div>
         <hr class="footer__line">
         <div class="footer__rights-wrap">
-            <p class="footer__rights-info">Copyright @ </p><p class="footer__date footer__rights-info">2020</p> <p class="form__special-text footer__rights-info">Brandoxide</p><p class="footer__rights-info">.all right reserved</p>
+            <p class="footer__rights-info">Copyright @&nbsp;</p><p class="footer__date footer__rights-info">2020</p>&nbsp;<p class="footer__special-text footer__rights-info">Brandoxide</p><p class="footer__rights-info">.all right reserved</p>
         </div>
     </div>
 

@@ -8,8 +8,15 @@
     justify-content: center;
     width: 100%;
     @include margin(0,0,218.46,0);   
+    position: relative;
  }
 .ad{
+    &__decoration{
+        position: absolute;
+        @include size(212.21,150.42);
+        left: find_size(-3.99, 100vw, $width-main);
+        bottom: 0;
+    }
     &__left-wrap{
         @include size(635.42, 458);
         @include margin(69, 13.53, 0,256.59);

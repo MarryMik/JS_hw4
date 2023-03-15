@@ -1,1 +1,128 @@
-/*# sourceMappingURL=footer.css.map */
+@font-face {
+  font-family: OpenSans;
+  src: url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Monda;
+  src: url("/fonts/Monda/Monda-Regular.ttf");
+}
+.footer {
+  width: 100%;
+  padding-top: 8.6111111111vh;
+  padding-right: 0;
+  padding-bottom: 1.6666666667vh;
+  padding-left: 0;
+  background-color: #F8F8F8;
+  position: relative;
+}
+.footer__main-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 6.3888888889vh;
+  margin-left: 0;
+}
+.footer__logo {
+  width: 7.8645833333vw;
+  height: 4.3518518519vh;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1.3888888889vh;
+  margin-left: 0;
+}
+.footer__logo-section {
+  width: 18.2291666667vw;
+  height: 9.2592592593vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0;
+  margin-right: 3.8020833333vw;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.footer__descr {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 1.6666666667vh;
+  line-height: 2.5925925926vh;
+  color: #646464;
+}
+.footer__links-wrap {
+  margin-top: 0;
+  margin-right: 3.3854166667vw;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.footer__headline {
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 2.2222222222vh;
+  line-height: 3.7037037037vh;
+  color: #212121;
+}
+.footer__link-text {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 1.6666666667vh;
+  line-height: 3.7037037037vh;
+  color: #646464;
+}
+.footer__adress-box {
+  width: 10.4166666667vw;
+  height: 19.7222222222vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.footer__line {
+  color: #C4C4C4;
+  width: 100%;
+  border: 1px solid;
+}
+.footer__rights-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__rights-info {
+  color: #646464;
+  font-size: 1.6666666667vh;
+  line-height: 2.3148148148vh;
+  font-family: OpenSans;
+  font-weight: 400;
+}
+.footer__special-text {
+  color: #37806B;
+}
+.footer__decoration {
+  width: 11.0703125vw;
+  height: 14.2175925926vh;
+  position: absolute;
+  left: 0.6770833333vw;
+  top: -7.7777777778vh;
+}/*# sourceMappingURL=footer.css.map */

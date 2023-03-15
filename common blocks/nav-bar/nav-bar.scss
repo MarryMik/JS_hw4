@@ -3,14 +3,35 @@
 @import "../functions";
 
 .nav-bar{
+    &__wrap{
+        position: relative;
+        @include size(0, 168.98);
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    
     @include size(1343.83,46.04);
-    @include margin(102.86, 314.59, 92.08, 261.58);
+    @include margin(102.86, 314.59, 20, 261.58);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
     &__link{
+        &:hover{
+            border: find_size(3,100vh,$height-main) solid $butn-color;
+            border-radius: border_rad(20);
+        }
+        border: find_size(3,100vh,$height-main) solid transparent;
+        border-radius: border_rad(20);
+        @include padding(11,11,11,11);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         &-text{
+            text-align: center;
             font-family: OpenSans;
             font-weight: 600;
             @include font_size(16, 21.79);
@@ -18,7 +39,11 @@
             &:hover{
                 color: $text-color;
             }
+            &:hover{
+                color: $butn-color;
+            }
         }
+        
     }
     &__links{
         &-wrap{
@@ -50,3 +75,4 @@
     }
     
 }
+

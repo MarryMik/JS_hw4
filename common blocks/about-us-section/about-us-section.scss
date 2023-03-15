@@ -6,6 +6,20 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    position: relative;
+    &__decoration{
+        position: absolute;
+        &_primary{
+            @include size(212.21, 150.42);
+            left: find_size(253.59, 100vw, $width-main);
+            bottom: find_size(932.85, 100vh, $height-main);
+        }
+        &_secondary{
+            @include size(212.55, 153.55);
+            right: find_size(8.45,100vw,$width-main);
+            bottom: find_size(447.45,100vh, $height-main);
+        }
+    }
     &__block{
         @include margin(0,0,198.86,0)
     }

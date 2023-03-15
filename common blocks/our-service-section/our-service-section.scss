@@ -8,6 +8,13 @@
     @include margin( 0,0,143.16,0);
 }
 .our-service{
+    position: relative;
+    &__decoration{
+        position: absolute;
+        @include size(245.77,254.55);
+        right: find_size(-28.37, 100vw, $width-main);
+        bottom: 0;
+    }
     &__tag-text{
         font-family: Poppins;
         font-weight: 600;

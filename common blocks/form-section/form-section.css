@@ -13,4 +13,121 @@
 @font-face {
   font-family: Monda;
   src: url("/fonts/Monda/Monda-Regular.ttf");
+}
+.form {
+  padding-top: 7.4074074074vh;
+  padding-right: 0;
+  padding-bottom: 8.5185185185vh;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__header {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #212121;
+  font-size: 4.4444444444vh;
+  line-height: 2.5925925926vh;
+}
+.form__line {
+  width: 24.0104166667vw;
+  height: 0;
+  border-top: 0.0925925926vh solid #C4C4C4;
+  margin-top: 3.4259259259vh;
+  margin-right: 0;
+  margin-bottom: 3.7037037037vh;
+  margin-left: 0;
+}
+.form__text-wrap {
+  width: 33.59375vw;
+  height: 5.1851851852vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 3.3333333333vh;
+  margin-left: 0;
+}
+.form__text {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 1.6666666667vh;
+  line-height: 2.5925925926vh;
+  color: #646464;
+  text-align: center;
+}
+.form__inputs-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.form__input-text {
+  background-color: #EEEEEE;
+  border-radius: 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 12.96875vw;
+  height: 4.4444444444vh;
+  padding-top: 0;
+  padding-right: 1.7708333333vw;
+  padding-bottom: 0;
+  padding-left: 1.7708333333vw;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 5.4416666667vh;
+  margin-left: 0;
+  border: none;
+  justify-self: center;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 1.6666666667vh;
+  line-height: 5.0925925926vh;
+  color: #646464;
+}
+.form__name {
+  justify-self: start;
+}
+.form__surname {
+  justify-self: end;
+}
+.form__email {
+  grid-column: 1/span 2;
+  width: 36.6666666667vw;
+  height: 4.4444444444vh;
+  padding-top: 0;
+  padding-right: 1.7708333333vw;
+  padding-bottom: 0;
+  padding-left: 1.7708333333vw;
+}
+.form__button {
+  margin-top: 3.0768518519vh;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  grid-column: 1/span 2;
+  width: 9.375vw;
+  height: 4.6296296296vh;
+  background-color: #37806B;
+  border-radius: 0px 0px 1.25rem 0px;
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 1.6666666667vh;
+  line-height: 5.0925925926vh;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+  justify-self: center;
 }/*# sourceMappingURL=form-section.css.map */

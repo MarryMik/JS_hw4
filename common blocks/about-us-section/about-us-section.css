@@ -18,6 +18,22 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  position: relative;
+}
+.about-us__decoration {
+  position: absolute;
+}
+.about-us__decoration_primary {
+  width: 11.0526041667vw;
+  height: 13.9277777778vh;
+  left: 13.2078125vw;
+  bottom: 86.375vh;
+}
+.about-us__decoration_secondary {
+  width: 11.0703125vw;
+  height: 14.2175925926vh;
+  right: 0.4401041667vw;
+  bottom: 41.4305555556vh;
 }
 .about-us__block {
   margin-top: 0;

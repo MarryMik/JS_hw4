@@ -30,8 +30,16 @@
   margin-right: 0;
   margin-bottom: 20.2277777778vh;
   margin-left: 0;
+  position: relative;
 }
 
+.ad__decoration {
+  position: absolute;
+  width: 11.0526041667vw;
+  height: 13.9277777778vh;
+  left: -0.2078125vw;
+  bottom: 0;
+}
 .ad__left-wrap {
   width: 33.0947916667vw;
   height: 42.4074074074vh;

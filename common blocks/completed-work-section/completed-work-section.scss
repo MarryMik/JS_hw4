@@ -10,6 +10,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    &__decoration{
+        position: absolute;
+        @include size(212.55, 153.55);
+        left: find_size(8, 100vw, $width-main);
+        bottom: find_size(-76.55, 100vh, $height-main);
+    }
     &__header-wrap{
         @include size(817,120);
         height:fit-content;

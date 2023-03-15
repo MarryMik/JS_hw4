@@ -1,3 +1,80 @@
 @import "../fonts";
 @import "../variables";
 @import "../functions";
+
+.form{
+    @include padding(80,0,92,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header{
+        font-family: Poppins;
+        font-weight: 500;
+        color: $header-color;
+        @include font_size(48,28);
+    }
+    &__line{
+       @include size(461,0);
+        border-top: find_size(1, 100vh, $height-main) solid $divider-color;
+        @include margin(37,0,40,0);
+    }
+    &__text-wrap{
+        @include size(645,56);
+        height:fit-content;
+        @include margin(0,0,36,0);
+        
+    }
+    &__text{
+        font-family: OpenSans;
+        font-weight: 400;
+        @include font_size(18,28);
+        color: $text-color;
+        text-align: center;
+    }
+    &__inputs-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    &__input-text{
+        background-color: $inputs-bgr;
+        border-radius: border_rad(20) 0;
+        display: flex;
+        justify-content: center;
+        @include size(249, 48);
+        @include padding(0,34,0,34);
+        @include margin( 0,0,58.77,0);
+        border: none;
+        justify-self: center;
+        font-family: Raleway;
+        font-weight: 500;
+        @include font_size(18,55);
+        color: $text-color;
+    }
+    &__name{
+        justify-self: start;
+    }
+    &__surname{
+        justify-self: end;
+    }
+    &__email{
+        grid-column: 1/ span 2;
+        @include size(704, 48);
+        @include padding(0,34,0,34);
+
+    }
+    &__button{
+        @include margin(33.23,0,0,0);
+        grid-column: 1/ span 2;
+        @include size(180,50);
+        background-color: $butn-color;
+        border-radius: 0px 0px border_rad(20) 0px;
+        font-family: OpenSans;
+        font-weight: 600;
+        @include font_size(18,55);
+        color: #FFFFFF;
+        text-align: center;
+        border: none;
+        justify-self: center;
+    }
+}

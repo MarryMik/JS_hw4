@@ -34,6 +34,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+.compl-work__decoration {
+  position: absolute;
+  width: 11.0703125vw;
+  height: 14.2175925926vh;
+  left: 0.4166666667vw;
+  bottom: -7.087962963vh;
 }
 .compl-work__header-wrap {
   width: 42.5520833333vw;

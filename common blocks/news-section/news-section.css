@@ -31,6 +31,14 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #F8F8F8;
+  position: relative;
+}
+.news__decoration {
+  width: 11.0703125vw;
+  height: 14.2175925926vh;
+  position: absolute;
+  right: 0.1796875vw;
+  bottom: -7.3657407407vh;
 }
 .news__tag {
   font-family: Poppins;

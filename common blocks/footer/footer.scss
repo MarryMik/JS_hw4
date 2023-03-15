@@ -1,0 +1,77 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.footer{
+    width: 100%;
+    @include padding(93,0,18,0);
+    background-color: $background-color;
+    position: relative;
+    &__main-part{
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       @include margin(0,0,69,0);
+    }
+    &__logo{
+        @include size(151,47);
+        @include margin(0,0,15,0);
+        &-section{
+            @include size(350, 100);
+            height: fit-content;
+            @include margin(0,73,0,0);
+        }
+    }
+    &__descr{
+        font-family: OpenSans;
+        font-weight: 400;
+        @include font_size(18,28);
+        color: $text-color;
+    }
+    &__links-wrap{
+        @include margin(0, 65, 0, 0);
+    }
+    &__headline{
+        font-family: OpenSans;
+        font-weight: 600;
+        @include font_size(24,40);
+        color: $header-color;
+    }
+    &__link{
+        &-text{
+            font-family: OpenSans;
+            font-weight: 400;
+            @include font_size(18,40);
+            color: $text-color;
+        }
+    }
+    &__adress-box{
+        @include size(200,213);
+        height: fit-content;
+    }
+    &__line{
+        color: $divider-color;
+        width: 100%;
+        border: 1px solid;
+    }
+    &__rights-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    &__rights-info{
+        color: $text-color;
+        @include font_size(18,25);
+        font-family: OpenSans;
+        font-weight: 400;
+    }
+    &__special-text{
+        color: $butn-color;
+    }
+    &__decoration{
+        @include size(212.55, 153.55);
+        position: absolute;
+        left: find_size(13,100vw, $width-main);
+        top: find_size(-84, 100vh, $height-main);
+    }
+}
