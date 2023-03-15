@@ -6,6 +6,9 @@
         @return calc(($val1*$val2)/$val3)
     }
 };
+@function border_rad($pxl){
+    @return calc(($pxl*1rem)/16);
+};
 
 @mixin size($w, $h, $w_res: $width-main, $h_res: $height-main){
     width: find-size($w,100vw, $w_res);
