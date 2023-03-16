@@ -36,11 +36,13 @@
           justify-content: space-between;
 }
 .nav-bar__wrap {
-  position: relative;
   width: 0;
   height: 15.6462962963vh;
   width: 100%;
   background-color: #FFFFFF;
+  z-index: 10;
+  position: fixed;
+  top: 0;
 }
 .nav-bar__link {
   border: 0.2777777778vh solid transparent;

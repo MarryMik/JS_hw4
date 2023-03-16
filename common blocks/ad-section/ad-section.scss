@@ -9,6 +9,7 @@
     width: 100%;
     @include margin(0,0,218.46,0);   
     position: relative;
+    @include padding(241.06,0,0,0);
  }
 .ad{
     &__decoration{

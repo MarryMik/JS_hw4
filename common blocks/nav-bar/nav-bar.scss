@@ -4,10 +4,12 @@
 
 .nav-bar{
     &__wrap{
-        position: relative;
         @include size(0, 168.98);
         width: 100%;
         background-color: #FFFFFF;
+        z-index: 10;
+        position: fixed;
+        top: 0;
     }
     
     @include size(1343.83,46.04);
