@@ -1,6 +1,27 @@
 const buttons = document.getElementsByClassName("our-service__filter");
 const divParent = document.getElementsByClassName("our-service__cards").item(0);
+const filter1=document.getElementsByClassName("our-service__filter_primary")[0];
+const filter2=document.getElementsByClassName("our-service__filter_secondary")[0];
+const filter3=document.getElementsByClassName("our-service__filter_tertiary")[0];
+const filter4=document.getElementsByClassName("our-service__filter_quaternary")[0];
 
+setTimeout(() => {
+    filter1.click();
+    console.log("click");
+    Array.from(document.getElementsByClassName("comment-box")).forEach((el,ind)=>{
+        if(ind===0 || ind===1){
+            el.style.display="block";
+        }else{
+            el.style.display="none";
+        }
+    }
+    )
+    if(Array.from(buttonRight.classList).length<=2){
+        buttonRight.classList.add('stage1');
+        buttonLeft.classList.add('stage1');
+    }
+
+},500);
 function addItem(type, title, text){
     //creating
     var newDiv = document.createElement("div"); //maindiv
@@ -43,6 +64,7 @@ function addItem(type, title, text){
 fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(json => {
+        console.log("fetch1");
         newItems = json;
         newItems.forEach( elem => {
             if(elem.userId==1){
@@ -56,14 +78,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
        
 })
 
-const filter1=document.getElementsByClassName("our-service__filter_primary")[0];
-const filter2=document.getElementsByClassName("our-service__filter_secondary")[0];
-const filter3=document.getElementsByClassName("our-service__filter_tertiary")[0];
-const filter4=document.getElementsByClassName("our-service__filter_quaternary")[0];
 
-window.addEventListener("load", (event) => {
-    filter1.click();
-  });
 filter1.addEventListener('click',function(){
     if(!Array.from(filter1.classList).includes("active")){
         filter1.classList.add("active");
@@ -97,8 +112,6 @@ filter1.addEventListener('click',function(){
         
 
     }
-    console.log(Array.from(filter1.classList).includes("active"));
-    console.log(document.getElementsByClassName("our-service__card_interior"));
 });
 filter2.addEventListener('click',function(){
     if(!Array.from(filter2.classList).includes("active")){

@@ -1,0 +1,46 @@
+{
+    "views":[
+        {
+            "id":1,
+            "userName": "Louis Saville",
+            "userJob": "/CEO at Google inc",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "userPhoto": "img/man-photo.svg"
+        },
+        {
+            "id":2,
+            "userName": "Rekha Varadwaz",
+            "userJob": "/Manager at Nike inc",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "userPhoto": "img/woman-photo.svg"
+        },
+        {
+            "id":3,
+            "userName": "Dolores Hamakichi",
+            "userJob": "/CEO at Google inc",
+            "text": "Servitium magnum et optimum servitium! Certus sum te commendo amicis meis! Tu es optimus!.",
+            "userPhoto": "img/woman-photo2.jpg"
+        },
+        {
+            "id":4,
+            "userName": "Henricus Robinson",
+            "userJob": "/Manager at Adidas inc",
+            "text": "Estne tam altam in mundo militiam, in amoena sum maxuma! Gratias tibi ago pro labore tuo!",
+            "userPhoto": "img/man-photo3.jpg"
+        },
+        {
+            "id":5,
+            "userName": "Salvator Hamatatsu",
+            "userJob": "/CEO at Amazon inc",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "userPhoto": "img/man-photo2.jpg"
+        },
+        {
+            "id":6,
+            "userName": "Karen Omega",
+            "userJob": "/Manager at Nike inc",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "userPhoto": "img/woman-photo3.jpg"
+        }
+    ]
+}

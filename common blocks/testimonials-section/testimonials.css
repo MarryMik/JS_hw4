@@ -15,11 +15,13 @@
   src: url("/fonts/Monda/Monda-Regular.ttf");
 }
 .testimonials {
-  width: 100%;
   padding-top: 12.3148148148vh;
   padding-right: 0;
-  padding-bottom: 22.6851851852vh;
+  padding-bottom: 0;
   padding-left: 0;
+  width: 0;
+  height: 63.7037037037vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,9 +102,6 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.testimonials__button:hover {
-  background-color: #37806B;
-}
 .testimonials__comments-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,4 +118,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }/*# sourceMappingURL=testimonials.css.map */
