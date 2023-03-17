@@ -90,3 +90,11 @@
         color:$text-color;
     }
 }
+.active{
+    background-color: #FFFFFF;
+    border: solid find_size(5, 1rem, 16) $butn-color;
+    &-text{
+        color: $butn-color;
+    }
+    
+}

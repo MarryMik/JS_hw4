@@ -157,4 +157,12 @@
   font-size: 1.6666666667vh;
   line-height: 2.5925925926vh;
   color: #646464;
+}
+
+.active {
+  background-color: #FFFFFF;
+  border: solid 0.3125rem #37806B;
+}
+.active-text {
+  color: #37806B;
 }/*# sourceMappingURL=our-service-section.css.map */
