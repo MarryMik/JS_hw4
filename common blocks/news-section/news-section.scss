@@ -35,6 +35,9 @@
         justify-content: space-evenly;
         width: 100%;
     }
+    &__box{
+        opacity: 0;
+    }
     &__picture-section{
         @include size(579, 646.06);
         height: fit-content;
@@ -42,17 +45,19 @@
     &__picture-section-wrap{
         width: 100%;
         position: relative;
-        @include padding( 406.47,0,0,0)
+        @include padding( 406.47,0,0,0);
+        
     }
     &__picture-wrap{
         @include size(554.42, 387.24);
-        border-radius: 100px 0px;
+        border-radius: border_rad(100) 0px;
         overflow: hidden;
         z-index: 2;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 0;  
     }
+    
     &__picture-bordshadow{
         @include size(554.42, 387.24);
         border-radius: 100px 0px;
@@ -69,11 +74,13 @@
         font-weight: 600;
         color: $header-color;
         @include font_size(30,28);
+        opacity: 0;
     }
     &__text-wrap{
         @include size(570,84);
         height: fit-content;
         @include margin(0,0,17,0);
+        opacity: 0;
     }
     &__text{
         color: $text-color;
@@ -92,4 +99,44 @@
             color: #FFFFFF;
         }
     }
+}
+.news_picture-show{
+    transition-property: opacity;
+    transition-duration:  2s;
+    opacity: 1;
+}
+.news_picture-hide{
+    transition-property: opacity;
+    transition-duration:  2s;
+    opacity: 0;
+}
+
+.news-text-show{
+    transition-property: opacity;
+    transition-duration:  1s;
+    opacity: 1;
+}
+.news-text-hide{
+    transition-property: opacity;
+    transition-duration:  0.5s;
+    opacity: 0;
+}
+
+.news-img-biggerer{
+    @include size(564.42, 407.24);
+    top: find_size(-15, 100vh, $height-main);
+    left: find_size(-10, 100vw, $width-main);
+    transition: width 2s;
+    transition: height 2s;
+    transition: top 0.5s;
+    transition: left 0.5s;
+}
+.news-img-smaller{
+    @include size(554.42, 387.24);
+    top: 0;
+    left: 0;
+    transition: width 2s;
+    transition: height 2s;
+    transition: top 0.5s;
+    transition: left 0.5s;
 }
