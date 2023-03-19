@@ -18,5 +18,5 @@ function preLoad(time){
         swithcDispalyAllContend("block");
     }, time);
 }
-
+//document.getElementsByClassName("publicAPI")[0].style.display="none"
 preLoad(5000);

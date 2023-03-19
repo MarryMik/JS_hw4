@@ -56,7 +56,6 @@ function hideOrShow(elem){
  fetch ('http://localhost:3000/views')
      .then(response => response.json())
      .then(json =>{
-        console.log("fetch2");
         newComments =json;
         newComments.forEach(elem => {
             return addComment(elem.userName, elem.userJob, elem.text, elem.userPhoto);

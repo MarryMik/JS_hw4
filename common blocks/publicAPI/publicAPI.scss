@@ -1,0 +1,26 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.publicAPI{
+    width: 100%;
+    @include margin(70, 0,70,0);
+    &__wrap{
+        @include padding(60,0,60,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__header{
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(48, 28);
+        color: $header-color;
+    }
+}

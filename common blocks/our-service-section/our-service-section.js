@@ -7,7 +7,6 @@ const filter4=document.getElementsByClassName("our-service__filter_quaternary")[
 
 setTimeout(() => {
     filter1.click();
-    console.log("click");
     Array.from(document.getElementsByClassName("comment-box")).forEach((el,ind)=>{
         if(ind===0 || ind===1){
             el.style.display="block";
@@ -64,7 +63,6 @@ function addItem(type, title, text){
 fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(json => {
-        console.log("fetch1");
         newItems = json;
         newItems.forEach( elem => {
             if(elem.userId==1){

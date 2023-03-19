@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="common blocks/nav-bar/progress-bar/progress-bar.css">
     <link rel="stylesheet" href="common blocks/pre-loader/pre-loader.css">
     <link rel="stylesheet" href="common blocks/congradulation/congradulation.css">
-    
+    <link rel="stylesheet" href="common blocks/publicAPI/publicAPI.css">
 </head>
 <body>
     <div class="nav-bar__wrap section" id="nav">
@@ -37,7 +37,7 @@
                     <a class="nav-bar__link" href="#testimonials"><p class="nav-bar__link-text">SHOP</p></a>
                     <a class="nav-bar__link"href="#modern_interior"><p class="nav-bar__link-text">CONTACT</p></a>
                 </div>
-                <button class="nav-bar__button" ><p class="nav-bar__button-text">Sign Up</p></button>
+                <button class="nav-bar__button" onclick="location.href='#signUp'"><p class="nav-bar__button-text">Sign Up</p></button>
             </div>
         </nav>
         <div class="progress-bar__wrap">
@@ -226,7 +226,7 @@
     </div>
 
     <div class="form section">
-        <p class="form__header">DON’T FORGET TO SIGN UP</p>
+        <a name="signUp"> <p class="form__header">DON’T FORGET TO SIGN UP</p></a>
         <div class="form__line"></div>
         <div class="form__text-wrap">
             <p class="form__text">Find out early about all upcoming promotions and new product releases with
@@ -239,6 +239,13 @@
             <p class="form__error-message"></p>
             <button type="submit" name="button" class="form__button" >SUBSCRIBE</button>
         </form>
+    </div>
+    <div class="publicAPI section">
+        <div class="publicAPI__wrapper">
+            <p class="publicAPI__header">Public API </p>
+            <div class="publicAPI__wrap">
+        </div>
+        </div>
     </div>
     
     <div class="footer section">
@@ -304,6 +311,7 @@
             <p class="footer__rights-info">Copyright @&nbsp;</p><p class="footer__date footer__rights-info"></p>&nbsp;<p class="footer__special-text footer__rights-info">Brandoxide</p><p class="footer__rights-info">.all right reserved</p>
         </div>
     </div>
+   
 
     <div class="pre-loader">
         <div class="horizont"> 
@@ -389,6 +397,7 @@
     <script src="common blocks/news-section/new-section.js"></script>
     <script src="common blocks/footer/footer.js"></script>
     <script src="common blocks/congradulation/congradulation.js"></script>
-    <script src="common blocks/form-section/form.js"></script>    
+    <script src="common blocks/form-section/form.js"></script>  
+    <script src="common blocks/publicAPI/publicAPI.js"></script>  
 </body>
 </html>
