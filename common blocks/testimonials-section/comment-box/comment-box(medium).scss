@@ -1,0 +1,70 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+.comment-box{
+    
+    height: fit-content; 
+    @include padding(41,34,60,99,$width-medium, $height-medium);
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: find_size(7,100vh,$height-medium) find_size(7,100vw,$width-medium) find_size(30,100vh,$height-medium) find_size(5,100vw,$width-medium) rgba(66, 96, 84, 0.15);
+    border-radius: border_rad(70) 0px;
+    @include margin(0,0,0,61,$width-medium, $height-medium);
+    &__photo-wrap{
+        @include size(130,131,$width-medium, $height-medium);
+        border-radius: border_rad(35) 0px;
+        overflow: hidden;
+        position: absolute;
+        left:find_size(-61, 100vw, $width-medium);
+        top: 15%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        &>img{
+            @include size(130, 164,$width-medium, $height-medium);
+        }
+    }
+    &__header-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include size(432,0,$width-medium, $height-medium);
+        height: fit-content;
+        &>div{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+    }
+    &__name{
+        font-family: OpenSans;
+        font-weight: 700;
+        @include font_size(24,33,$height-medium);
+        color: $header-color;
+        &+p{
+            @include font_size(16, 21.79, $height-medium);
+            color: $text-color;
+        }
+    }
+    &__quotes{
+        font-family: Monda;
+        font-weight: 600;
+        @include font_size(96, 10, $height-medium);
+        color: $border-el-color;
+    }
+    &__text{
+        font-family: OpenSans;
+        font-weight: 400;
+        color: $text-color;
+        @include font_size(18,28, $height-medium);
+        &-wrap{
+            @include size(432,84,$width-medium, $height-medium);
+            height: fit-content;
+            @include margin(8,0,0,0,$width-medium, $height-medium);
+        }
+    }
+   
+}

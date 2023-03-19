@@ -1,0 +1,95 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.ad-section{
+    
+    width: 100%;
+    @include margin(0,0,215.46,0, $width-medium, $height-medium);   
+    position: relative;
+    @include padding(191.06,0,0,0, $width-medium, $height-medium);
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+ }
+.ad{
+    &__decoration{
+        position: absolute;
+        @include size(117.5,150.42, $width-medium, $height-medium);
+        left: find_size(-26, 100vw, $width-medium);
+        bottom: 0;
+    }
+    &__left-wrap{
+        @include size(422.11, 493.35, $width-mini, $height-mini);
+        height: fit-content;
+        @include margin(80, 46, 20,47, $width-mini, $height-mini);
+    }
+    &__tag-anchor{
+        @include margin(0,0,22.46,0, $width-medium, $height-medium)
+    }
+    &__tag-text{
+        font-family: OpenSans;
+        @include font_size(20, 27.24, $height-medium);
+        color: $text-color;
+        font-weight: 600;
+    }
+    &__header-wrap{
+        @include size(401, 0, $width-mini, $height-mini);
+        height:fit-content;
+        @include margin(0,0,9.54,0, $width-medium, $height-medium);
+    }
+    &__header{
+        font-family: Poppins;
+        color: $header-color;
+        font-weight: 600;
+        @include font_size(38,48, $height-mini);
+    }
+    &__descr-wrap{
+        @include size(381,99.57, $width-mini, $height-mini);
+        @include margin(0, 0, 24,0, $width-medium, $height-medium);
+        height:fit-content;
+
+    }
+    &__descr-text{
+        font-family: OpenSans;
+        color: $text-color;
+        font-weight: 400;
+        @include font_size(18,30, $height-medium);
+    }
+
+    &__butn{
+        background-color: $butn-color;
+        @include size(149.06, 47.36, $width-mini, $height-mini);
+        border-radius: border_rad(20) 0;
+        align-items: center;
+        &-text{
+            font-family: OpenSans;
+            font-weight: 700;
+            @include font_size(18, 0, $height-medium);
+            color: #FFFFFF;
+        }
+    }
+    &__right-wrap{
+        @include size(415.15, 645.55, $width-mini, $height-mini);
+        position: relative;
+    }
+    &__picture-wrap{
+        @include size(395.8, 613.23, $width-mini, $height-mini);
+        border-radius: border_rad(140) 0;
+        position: absolute;
+        overflow: hidden;
+    }
+    &__picture-bordshadow{
+        @include size(395.8, 613.23, $width-mini, $height-mini);
+        border: 2px solid $border-el-color;
+        border-radius: border_rad(140) 0;
+        position: absolute;
+        z-index: -1;
+        left: find-size(19.35, 100vw, $width-mini);
+        top: find-size(32.33, 100vh, $height-mini);
+    }
+ }

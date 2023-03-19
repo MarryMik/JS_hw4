@@ -3,10 +3,13 @@
 @import "../functions";
 
 .about-us{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    position: relative;
+   
+    &__wrap{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        position: relative;
+    }
     &__decoration{
         position: absolute;
         &_primary{
@@ -30,7 +33,7 @@
     }
     &__picture-wrap{
         @include size(678.9, 711.19);
-        border-radius: 140px 0px;
+        border-radius: border_rad(140) 0px;
         position: absolute;
         overflow: hidden;
         right:0; 
@@ -42,7 +45,7 @@
     }
     &__picture-bordshadow{
         @include size(678.9, 711.19);
-        border-radius: 140px 0px;
+        border-radius: border_rad(140) 0px;
         position: absolute;
         overflow: hidden;
         z-index: -1;
@@ -89,7 +92,7 @@
     &__butn{
         background-color: $butn-color;
         @include size(141.92,41.93);
-        border-radius: 20px 0px;
+        border-radius: border_rad(20) 0px;
         &-text{
             font-family: OpenSans;
             font-weight: 700;

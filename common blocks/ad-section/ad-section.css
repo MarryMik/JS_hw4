@@ -15,6 +15,18 @@
   src: url("/fonts/Monda/Monda-Regular.ttf");
 }
 .ad-section {
+  width: 100%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20.2277777778vh;
+  margin-left: 0;
+  position: relative;
+  padding-top: 22.3203703704vh;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.ad-section__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,15 +38,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 20.2277777778vh;
-  margin-left: 0;
-  position: relative;
-  padding-top: 22.3203703704vh;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
 }
 
 .ad__decoration {
@@ -105,7 +108,7 @@
   background-color: #37806B;
   width: 7.7635416667vw;
   height: 4.3851851852vh;
-  border-radius: 20px 0;
+  border-radius: 1.25rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

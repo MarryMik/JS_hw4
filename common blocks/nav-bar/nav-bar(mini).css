@@ -1,1 +1,107 @@
-/*# sourceMappingURL=nav-bar(mini).css.map */
+@font-face {
+  font-family: OpenSans;
+  src: url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Monda;
+  src: url("/fonts/Monda/Monda-Regular.ttf");
+}
+.nav-bar {
+  width: 88.8066604995vw;
+  height: 7.5715900915vh;
+  margin-top: 9.8674067222vh;
+  margin-right: 5.9204440333vw;
+  margin-bottom: 3.2891355741vh;
+  margin-left: 5.9204440333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-bar__wrap {
+  width: 0;
+  height: 21.2116353171vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+.nav-bar__link {
+  display: none;
+  border: 0.4933703361vh solid transparent;
+  border-radius: 1.25rem;
+  padding-top: 1.8090245657vh;
+  padding-right: 1.0175763182vw;
+  padding-bottom: 1.8090245657vh;
+  padding-left: 1.0175763182vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-bar__link:hover {
+  border: 0.4933703361vh solid #37806B;
+  border-radius: 1.25rem;
+}
+.nav-bar__link-text {
+  text-align: center;
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 2.6313084592vh;
+  line-height: 3.5835132079vh;
+  color: #111111;
+}
+.nav-bar__link-text:hover {
+  color: #646464;
+}
+.nav-bar__link-text:hover {
+  color: #37806B;
+}
+.nav-bar__links {
+  display: none;
+}
+.nav-bar__logo {
+  width: 14.7368421053vw;
+  height: 7.485380117vh;
+}
+.nav-bar__button {
+  width: 11.7210526316vw;
+  height: 7.3333333333vh;
+  margin-top: 0;
+  margin-right: 6.5789473684vw;
+  margin-bottom: 0;
+  margin-left: 0;
+  background-color: #CAA892;
+  border-radius: 0.9375rem 0px;
+  border: none;
+}
+.nav-bar__button-text {
+  color: #FFFFFF;
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 2.6313084592vh;
+  line-height: 3.6180491315vh;
+}/*# sourceMappingURL=nav-bar(mini).css.map */

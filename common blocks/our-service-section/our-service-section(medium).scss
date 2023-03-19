@@ -1,0 +1,108 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.our-service-section{
+    width: 100%;
+    height: fit-content;
+    @include margin( 0,0,143.16,0, $width-medium, $height-medium);
+    position: relative;
+}
+.our-service{
+    
+    &__decoration{
+        position: absolute;
+        @include size(168.46,252.94, $width-medium, $height-medium);
+        right: find_size(0, 100vw, $width-medium);
+        bottom: 0;
+    }
+    &__tag-text{
+        font-family: Poppins;
+        font-weight: 600;
+        @include font_size(20,28, $height-medium);
+        color: $text-color;
+        @include margin(0, 0, 0, 75.62, $width-medium, $height-medium);
+
+    }
+    &__header{
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(40,78, $height-medium);
+        color: $header-color;
+        @include margin(0, 0, 0,75.62, $width-medium, $height-medium);
+    }
+    &__filters{
+        @include margin(36, 0, 110.69,75.62, $width-medium, $height-medium);
+        display: flex;
+        flex-direction: row;
+    }
+    &__filter{
+        @include margin(0, 29, 0,0, $width-medium, $height-medium);
+        background-color: $butn-color;
+        @include size(146, 46.04, $width-medium, $height-medium);
+        border-radius: border_rad(20);
+        &-text{
+            font-family: OpenSans;
+            font-weight: 700;
+            @include font_size(16, 18, $height-medium);
+            color: #FFFFFF;
+        }   
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    &__card{
+        z-index: 2;
+        background: #FFFFFF;
+        box-shadow: 0px find_size(8,100vw,$width-medium) find_size(20, 100vh, $height-medium) rgba(0, 0, 0, 0.14);
+        border-radius: border_rad(60) 0px;
+        @include size(381.36, 111.82, $width-medium, $height-medium);
+        @include padding(33.16, 45,15,40.64, $width-medium, $height-medium);
+        @include margin(13.5,13.5,13.5,13.5, $width-medium, $height-medium);
+        height: fit-content;
+        &_architect{
+            background-color: $butn-signUp-color;
+        }
+        p[class$='_architect']{
+            color:#FFFFFF;
+        }
+    }
+    &-card__wrapper{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+
+    }
+    &-card__image{
+        @include margin(0, 22, 0,0, $width-medium, $height-medium);
+        @include size(43.93,28.43, $width-medium, $height-medium);
+    }
+    &-card__text-wrapper{
+        @include size(304,0, $width-medium, $height-medium);
+        height: fit-content;
+    }
+    &-card__header{
+        font-family: OpenSans;
+        font-weight: 700;
+        @include font_size(24, 20, $height-medium);
+        color: $header-color; 
+    }
+    &-card__text{
+        font-family: OpenSans;
+        font-weight: 400;
+        @include font_size(18, 28, $height-medium);
+        color:$text-color;
+    }
+}
+.active{
+    background-color: #FFFFFF;
+    border: solid find_size(5, 1rem, 16) $butn-color;
+    &-text{
+        color: $butn-color;
+    }
+    
+}

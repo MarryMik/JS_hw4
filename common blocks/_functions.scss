@@ -15,14 +15,14 @@
     height: find-size($h,100vh,$h_res);
 }
 
-@mixin margin($t, $r, $b, $l, $h_res: $height-main, $w_res: $width-main){
+@mixin margin($t, $r, $b, $l, $w_res: $width-main, $h_res: $height-main){
     margin-top: find-size($t,100vh,$h_res);
     margin-right: find-size($r,100vw, $w_res);
     margin-bottom: find-size($b,100vh,$h_res);
     margin-left: find-size($l,100vw, $w_res);
     
 }
-@mixin padding($t, $r, $b, $l, $h_res: $height-main, $w_res: $width-main){
+@mixin padding($t, $r, $b, $l, $w_res: $width-main, $h_res: $height-main){
     padding-top: find-size($t,100vh,$h_res);
     padding-right: find-size($r,100vw, $w_res);
     padding-bottom: find-size($b,100vh,$h_res);

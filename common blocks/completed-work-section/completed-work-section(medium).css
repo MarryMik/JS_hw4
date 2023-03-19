@@ -1,1 +1,70 @@
-/*# sourceMappingURL=completed-work-section(medium).css.map */
+@font-face {
+  font-family: OpenSans;
+  src: url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Monda;
+  src: url("/fonts/Monda/Monda-Regular.ttf");
+}
+.compl-work {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 13.9788261897vh;
+  padding-right: 0;
+  padding-bottom: 15.1300236407vh;
+  padding-left: 0;
+  background-color: #F8F8F8;
+}
+.compl-work__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.compl-work__decoration {
+  position: absolute;
+  width: 19.6623496762vw;
+  height: 25.2523383698vh;
+  left: 0.7400555042vw;
+  bottom: -12.5891664097vh;
+}
+.compl-work__header-wrap {
+  width: 75.5781683626vw;
+  height: 19.7348134443vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 14.3077397471vh;
+  margin-left: 0;
+}
+.compl-work__header {
+  font-family: Poppins;
+  font-weight: 500;
+  text-align: center;
+  color: #212121;
+  font-size: 7.8939253777vh;
+  line-height: 9.8674067222vh;
+}/*# sourceMappingURL=completed-work-section(medium).css.map */

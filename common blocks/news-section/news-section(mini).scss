@@ -1,0 +1,154 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.news{
+    @include padding(93, 0, 122.57,0,$width-medium,$height-medium);
+    width: 100%;
+    background-color: $background-color;
+    position: relative;
+    &__wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__decoration{
+        @include size(212.55,153.55,$width-mini, $height-mini);
+        position: absolute;
+        right: find_size(3.45, 100vw, $width-medium);
+        bottom: find_size(-79.55, 100vh, $height-medium);
+    }
+    &__tag{
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(20,28,$height-medium);
+        color: $text-color;
+        text-align: center;
+    }
+    &__header{
+        text-align: center;
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(48,28,$height-medium);
+        color: $header-color2;
+        @include margin(25,0,78,0,$width-medium,$height-medium);   
+    }
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    &__box{
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_two{
+            display: none;
+        }
+    }
+    &__picture-section{
+        @include size(579, 646.06,$width-medium,$height-medium);
+        height: fit-content;
+    }
+    &__picture-section-wrap{
+        width: 100%;
+        position: relative;
+        @include padding( 406.47,0,0,0,$width-medium,$height-medium);
+        
+    }
+    &__picture-wrap{
+        @include size(554.42, 387.24,$width-medium,$height-medium);
+        border-radius: border_rad(100) 0px;
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;  
+    }
+    
+    &__picture-bordshadow{
+        @include size(554.42, 387.24,$width-medium,$height-medium);
+        border-radius: border_rad(100) 0px;
+        background-color: transparent;
+        border: 2px solid $border-el-color;
+        position: absolute;
+        z-index: 0;
+        left: find_size(15.58, 100vw, $width-medium);
+        top:find_size(17.23, 100vh, $height-medium);
+    }
+    &__title{
+        @include margin(42.53, 0, 17,0,$width-medium,$height-medium);
+        font-family: OpenSans;
+        font-weight: 600;
+        color: $header-color;
+        @include font_size(30,28, $height-medium);
+        opacity: 0;
+    }
+    &__text-wrap{
+        @include size(570,84,$width-medium,$height-medium);
+        height: fit-content;
+        @include margin(0,0,17,0,$width-medium,$height-medium);
+        opacity: 0;
+    }
+    &__text{
+        color: $text-color;
+        font-family: OpenSans;
+        font-weight: 400;
+        @include font_size(18,28,$height-medium);
+    }
+    &__butn{
+        @include size(271,53.06,$width-mini, $height-mini);
+        background-color: $butn-color;
+        border-radius: border_rad(25) 0;
+        &-text{
+            @include font_size(18,28, $height-medium);
+            font-family: OpenSans;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+    }
+}
+.news_picture-show{
+    transition-property: opacity;
+    transition-duration:  2s;
+    opacity: 1;
+}
+.news_picture-hide{
+    transition-property: opacity;
+    transition-duration:  2s;
+    opacity: 0;
+}
+
+.news-text-show{
+    transition-property: opacity;
+    transition-duration:  1s;
+    opacity: 1;
+}
+.news-text-hide{
+    transition-property: opacity;
+    transition-duration:  0.5s;
+    opacity: 0;
+}
+
+.news-img-biggerer{
+    @include size(564.42, 407.24,$width-medium,$height-medium);
+    top: find_size(-15, 100vh, $height-main);
+    left: find_size(-10, 100vw, $width-main);
+    transition: width 2s;
+    transition: height 2s;
+    transition: top 0.5s;
+    transition: left 0.5s;
+}
+.news-img-smaller{
+    @include size(554.42, 387.24,$width-medium,$height-medium);
+    top: 0;
+    left: 0;
+    transition: width 2s;
+    transition: height 2s;
+    transition: top 0.5s;
+    transition: left 0.5s;
+}

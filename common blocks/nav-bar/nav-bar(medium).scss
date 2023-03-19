@@ -1,0 +1,82 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.nav-bar{
+    &__wrap{
+        @include size(0, 128.98,$width-medium, $height-medium);
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+    }
+    
+    @include size(960,46.04,$width-medium, $height-medium);
+    @include margin(60, 64, 20, 64,$width-medium, $height-medium);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__link{
+        &:hover{
+            border: find_size(3,100vh,$height-medium) solid $butn-color;
+            border-radius: border_rad(20);
+        }
+        border: find_size(3,100vh,$height-medium) solid transparent;
+        border-radius: border_rad(20);
+        @include padding(11,11,11,11,$width-medium, $height-medium);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &-text{
+            text-align: center;
+            font-family: OpenSans;
+            font-weight: 600;
+            @include font_size(16, 21.79, $height-medium);
+            color: #111111;
+            &:hover{
+                color: $text-color;
+            }
+            &:hover{
+                color: $butn-color;
+            }
+        }
+        
+    }
+    &__links{
+        &-wrap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include size(648.95,21.55, $width-medium, $height-medium);
+        @include margin(0, 63.9, 0, 0,$width-medium, $height-medium);
+    }
+    &__logo{
+        @include size(112, 32,$width-medium, $height-medium);
+    }
+    &__button{
+        @include size(89.08, 31.35,$width-medium, $height-medium);
+        background-color: $butn-signUp-color;
+        border-radius: border_rad(15) 0px;
+        border: none;
+        &-text{
+            color:#FFFFFF;
+            font-family: OpenSans;
+            font-weight: 600;
+            @include font_size(16, 22, $height-medium);
+        }
+
+    }
+    
+}
+.burger-menu{
+    display:none;
+}

@@ -6,9 +6,9 @@
     width: 100%;
     height: fit-content;
     @include margin( 0,0,143.16,0);
+    position: relative;
 }
 .our-service{
-    position: relative;
     &__decoration{
         position: absolute;
         @include size(245.77,254.55);
@@ -39,7 +39,7 @@
         @include margin(0, 77.87, 0,0);
         background-color: $butn-color;
         @include size(206.67, 46.04);
-        border-radius: 20px;
+        border-radius: border_rad(20);
         &-text{
             font-family: OpenSans;
             font-weight: 700;
@@ -54,14 +54,12 @@
     }
     &__card{
         background: #FFFFFF;
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
-        border-radius: 60px 0px;
+        box-shadow: 0px find_size(8,100vw,$width-main) find_size(20, 100vh, $height-main) rgba(0, 0, 0, 0.14);
+        border-radius: border_rad(60) 0px;
         @include size(412.43, 128.8);
         @include padding(28.42, 24.16,7.35,40.64);
         @include margin(44.3,44.5,44.3,44.5);
         height: fit-content;
-        display: flex;
-        flex-direction: row;
         &_architect{
             background-color: $butn-signUp-color;
         }
@@ -69,6 +67,13 @@
             color:#FFFFFF;
         }
     }
+    &-card__wrapper{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+
+}
     &-card__image{
         @include margin(0, 22, 0,0);
         @include size(43.93,28.43);

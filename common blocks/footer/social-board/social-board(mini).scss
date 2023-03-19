@@ -1,0 +1,39 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+.social-board{
+    @include margin(19,0,0,0,$width-mini, $height-mini);
+    @include size( 83.23, 37.17,$width-mini, $height-mini);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__elem{
+        @include size(37.17, 37.17,$width-mini, $height-mini);
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $socials-bgr;
+        &:hover{
+            background-color: $butn-color;
+        }
+    }
+    &__image{
+        &-primary{
+            @include size(19,23,$width-mini, $height-mini);
+        }
+        &-secondary{
+            @include size(20.01,20.01,$width-mini, $height-mini);
+        }
+        &-tertiary{
+            @include size(18.87,18.87,$width-mini, $height-mini);
+        }
+        &-quaternary{
+            @include size(10.58,10.01,$width-mini, $height-mini);
+        }
+    }
+}
+

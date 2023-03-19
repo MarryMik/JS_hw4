@@ -1,0 +1,144 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.about-us{
+    width: 100%;
+    &__wrap{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        position: relative;
+    }
+    &__decoration{
+        position: absolute;
+        &_primary{
+            @include size(117.5, 150.42, $width-medium, $height-medium);
+            left: find_size(142.62, 100vw, $width-medium);
+            top: find_size(817.96, 100vh, $height-medium);
+        }
+        &_secondary{
+            @include size(140.55, 153.55, $width-medium, $height-medium);
+            right: find_size(8.45,100vw,$width-medium);
+            bottom: find_size(447.45,100vh, $height-medium);
+        }
+    }
+    &__block{
+        @include margin(0,0,0,0, $width-medium, $height-medium);
+        width: 100%;
+    }
+    &__block_primary, &__block_quternary{
+        @include size(507.16, 740.23, $width-medium, $height-medium);
+       width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    &__picture-wrap{
+        @include size(618.7, 708.98, $width-medium, $height-medium); 
+        border-radius: border_rad(140) 0px;
+        position: absolute;
+        overflow: hidden;
+        left:25%; 
+        top:0;   
+    }
+    &__picture-bordshadow{
+        @include size(618.7, 708.98, $width-medium, $height-medium);
+        border-radius: border_rad(140) 0px;
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+        border: 2px solid $border-el-color;
+        left:28%;
+        top: 4%;
+    } 
+    &__block_secondary{
+        justify-self: center;
+        @include padding(15.23, 0, 0, 72.84, $width-medium, $height-medium );
+        @include size(647.23, 550, $width-medium, $height-medium);
+        height:fit-content;
+    }
+    &__tag-text{
+        font-family: Poppins;
+        font-weight: 500;
+        color: $text-color;
+        @include font_size(20,30, $height-medium);
+        @include margin(0,0,59,0, $width-medium, $height-medium);
+    }
+    &__header-wrap{
+        @include size(632, 123.55, $width-medium, $height-medium);
+        height: fit-content;
+        &>p{
+            font-family: Poppins;
+            font-weight: 500;
+            @include font_size(40, 57, $height-medium);
+            color: $header-color;
+        }
+    }
+    &__descr-wrap{
+        @include size(641, 260.11, $width-medium, $height-medium);
+        height: fit-content;
+        @include margin(12.45,0,45.06,0, $width-medium, $height-medium);
+        &>p{
+            font-family: OpenSans;
+            font-weight: 400;
+            @include font_size(18, 30, $height-medium);
+            color:$text-color;
+        }
+    } 
+    &__butn{
+        background-color: $butn-color;
+        @include size(141.92,41.93, $width-mini, $height-mini);
+        border-radius: border_rad(20) 0px;
+        &-text{
+            font-family: OpenSans;
+            font-weight: 700;
+            @include font_size(16, 0,$height-medium);
+            color:#FFFFFF;
+        }
+        &_below{
+            @include size(174.59, 43.86, $width-medium, $height-medium);
+        }
+    }
+    &__block_tertiary{
+        @include size(482.08, 493.42, $width-medium, $height-medium);
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>div{
+            
+            @include size(482.08, 493.42, $width-medium, $height-medium);
+            height: fit-content;
+            //position: absolute;
+            right: 25% ;
+        }
+    }
+    &__header-wrap_below{
+        @include size(464.08, 200.68, $width-medium, $height-medium);
+        height: fit-content;
+        @include margin(0,0, 23.2,0, $width-medium, $height-medium);
+        &>p{
+            font-family: Poppins;
+            font-weight: 500;
+            @include font_size(40, 65, $height-medium);
+            color: $header-color;
+        }
+    }
+    &__big-number{
+        background-clip: text;
+        background-image: url('/img/20-backgr.svg');
+        color: transparent;
+        @include font_size(288,28, $height-medium);
+        @include margin(80,0,0,0, $width-medium, $height-medium);
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        height: find_size(288, 100vh, $height-medium);
+        background-position: top find_size(580, 100vh, $height-medium) left find_size(680, 100vw, $width-medium);
+        font-family: OpenSans;
+    }
+}

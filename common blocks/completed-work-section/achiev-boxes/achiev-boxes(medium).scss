@@ -1,0 +1,56 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+.achiev-boxes{
+    @include size(989, 293, $width-medium, $height-medium);
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    &__box{
+        @include size(185, 182, $width-medium, $height-medium);
+        background: #FFFFFF;
+        box-shadow: 0px find_size(13,100vw,$width-medium) find_size(16,100vh,$height-medium) rgba(0, 0, 0, 0.1);
+        border-radius: border_rad(40) 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        &>p{
+            @include font_size(50,60,$height-medium);
+            font-family: OpenSans;
+            font-weight: 700;
+            color: $header-color;
+            &~p{
+                @include font_size(18,30,$height-medium);
+                color: $text-color;
+            }
+        }
+        &_secondary, &_quaternary{
+          @include margin(96,0,0,0, $width-medium, $height-medium);
+        }
+    }
+    &__vector{
+        position: absolute;
+        &_primary{
+            left: find_size(138,100vw,$width-medium);
+            top: 35%;
+            @include size(218,96, $width-medium, $height-medium);
+        }
+        &_secondary{
+            left:40%;
+            top: 35%;
+            @include size(218,95, $width-medium, $height-medium);
+        }
+        &_tertiary{
+            right:find_size(138,100vw,$width-medium);
+            top: 35%;
+            @include size(218,106, $width-medium, $height-medium);
+        }
+      
+    }
+    
+}

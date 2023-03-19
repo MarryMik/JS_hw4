@@ -24,6 +24,8 @@
   padding-bottom: 9.7222222222vh;
   padding-left: 0;
   background-color: #F8F8F8;
+}
+.compl-work__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +37,10 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .compl-work__decoration {
   position: absolute;

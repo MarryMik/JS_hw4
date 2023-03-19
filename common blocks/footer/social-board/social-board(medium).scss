@@ -1,0 +1,37 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+.social-board{
+    @include margin(19,0,0,0,$width-medium, $height-medium);
+    @include size( 183.23, 37.17,$width-medium, $height-medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__elem{
+        @include size(37.17, 37.17,$width-medium, $height-medium);
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $socials-bgr;
+        &:hover{
+            background-color: $butn-color;
+        }
+    }
+    &__image{
+        &-primary{
+            @include size(19,23,$width-medium, $height-medium);
+        }
+        &-secondary{
+            @include size(20.01,20.01,$width-medium, $height-medium);
+        }
+        &-tertiary{
+            @include size(18.87,18.87,$width-medium, $height-medium);
+        }
+        &-quaternary{
+            @include size(20.58,20.01,$width-medium, $height-medium);
+        }
+    }
+}

@@ -65,7 +65,7 @@
     &__button{
         @include size(96.84, 31.35);
         background-color: $butn-signUp-color;
-        border-radius: 15px 0px;
+        border-radius: border_rad(15) 0px;
         border: none;
         &-text{
             color:#FFFFFF;
@@ -78,3 +78,6 @@
     
 }
 
+.burger-menu{
+    display:none;
+}

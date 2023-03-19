@@ -8,11 +8,20 @@ const filter4=document.getElementsByClassName("our-service__filter_quaternary")[
 setTimeout(() => {
     filter1.click();
     Array.from(document.getElementsByClassName("comment-box")).forEach((el,ind)=>{
-        if(ind===0 || ind===1){
-            el.style.display="block";
-        }else{
-            el.style.display="none";
+        if(window.innerWidth<=1109){
+            if(ind===0){
+                el.style.display="block";
+            }else{
+                el.style.display="none";
+            }
+        }if(window.innerWidth>=1109){
+            if(ind===0 || ind===1){
+                el.style.display="block";
+            }else{
+                el.style.display="none";
+            }
         }
+        
     }
     )
     if(Array.from(buttonRight.classList).length<=2){
@@ -20,16 +29,18 @@ setTimeout(() => {
         buttonLeft.classList.add('stage1');
     }
 
-},500);
+},1000);
 function addItem(type, title, text){
     //creating
     var newDiv = document.createElement("div"); //maindiv
+    const newDivWrapper = document.createElement("div");//wpapper
     const newIcon = document.createElement("img"); //img
     const newDivWrap = document.createElement("div");//wrap
     const newHeader = document.createElement("p");//p1
     const newText = document.createElement("p");//p2
     newHeader.innerText = title;
     newText.innerText=text;
+    
 
     //adding the classes
     newDiv.classList.add("our-service__card");//maindiv
@@ -37,7 +48,7 @@ function addItem(type, title, text){
     newDivWrap.classList.add("our-service-card__text-wrapper");//wrap
     newHeader.classList.add("our-service-card__header");//p1
     newText.classList.add("our-service-card__text");//p2
-    
+    newDivWrapper.classList.add("our-service-card__wrapper");
     //distinguishing by id
     if( type===1){
         newDiv.classList.add("our-service__card_interior");//maindiv
@@ -53,10 +64,11 @@ function addItem(type, title, text){
     }
    
     //appending
-    newDiv.append(newIcon);//img
+    newDiv.append(newDivWrapper);//img
+    newDivWrapper.append(newIcon);
     newDivWrap.append(newHeader);//p1
     newDivWrap.append(newText);//p2
-    newDiv.append(newDivWrap);//wrap
+    newDivWrapper.append(newDivWrap);//wrap
     divParent.append(newDiv); //maindiv 
 }
 

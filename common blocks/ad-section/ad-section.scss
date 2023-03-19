@@ -3,9 +3,12 @@
 @import "../functions";
 
 .ad-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
     width: 100%;
     @include margin(0,0,218.46,0);   
     position: relative;
@@ -58,7 +61,7 @@
     &__butn{
         background-color: $butn-color;
         @include size(149.06, 47.36);
-        border-radius: 20px 0;
+        border-radius: border_rad(20) 0;
         align-items: center;
         &-text{
             font-family: OpenSans;

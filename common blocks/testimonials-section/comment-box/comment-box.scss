@@ -8,12 +8,12 @@
     @include padding(41,34,60,99);
     position: relative;
     background: #FFFFFF;
-    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
-    border-radius: 70px 0px;
+    box-shadow: find_size(7,100vh,$height-main) find_size(7,100vw,$width-meain) find_size(30,100vh,$height-main) find_size(5,100vw,$width-main) rgba(66, 96, 84, 0.15);
+    border-radius: border_rad(70) 0px;
     @include margin(0,0,0,61);
     &__photo-wrap{
         @include size(130,131);
-        border-radius: 35px 0px;
+        border-radius: border_rad(35) 0px;
         overflow: hidden;
         position: absolute;
         left:find_size(-61, 100vw, $width-main);

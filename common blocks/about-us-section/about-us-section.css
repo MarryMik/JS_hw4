@@ -14,7 +14,7 @@
   font-family: Monda;
   src: url("/fonts/Monda/Monda-Regular.ttf");
 }
-.about-us {
+.about-us__wrap {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
@@ -50,7 +50,7 @@
 .about-us__picture-wrap {
   width: 35.359375vw;
   height: 65.8509259259vh;
-  border-radius: 140px 0px;
+  border-radius: 8.75rem 0px;
   position: absolute;
   overflow: hidden;
   right: 0;
@@ -63,7 +63,7 @@
 .about-us__picture-bordshadow {
   width: 35.359375vw;
   height: 65.8509259259vh;
-  border-radius: 140px 0px;
+  border-radius: 8.75rem 0px;
   position: absolute;
   overflow: hidden;
   z-index: -1;
@@ -132,7 +132,7 @@
   background-color: #37806B;
   width: 7.3916666667vw;
   height: 3.8824074074vh;
-  border-radius: 20px 0px;
+  border-radius: 1.25rem 0px;
 }
 .about-us__butn-text {
   font-family: OpenSans;

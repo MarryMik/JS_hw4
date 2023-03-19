@@ -1,0 +1,68 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.testimonials{
+    @include padding(133,0,0,0,$width-medium, $height-medium);
+    width: 100%;
+    height: fit-content;
+    &__wrap{
+        @include size(0, 688,$width-mini, $height-mini);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__wrapper-content{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        &>div[class$="wrapper"]{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+   
+    &__tag{
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(20,30, $height-medium);
+        color: $text-color;
+    }
+    &__header{
+        font-family: Poppins;
+        font-weight: 500;
+        @include font_size(48,72, $height-medium);
+        color: $header-color;
+    }
+    &__buttons-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include size(113,30,$width-medium, $height-medium);
+        @include margin(0,0,85,0,$width-medium, $height-medium);
+    }
+    &__button{
+        @include size(30,30);
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: find_size(-1,100vh,$height-medium) find_size(3,100vw,$width-medium) find_size(10,100vh,$height-medium) rgba(0, 0, 0, 0.3);
+        &_right>img{
+            transform: rotate(180deg);
+        }
+       
+    }
+    &__comments-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include size(732,430,$width-medium, $height-medium);
+        height: fit-content;
+        justify-content: space-between;
+        flex-wrap:wrap;
+       
+    }
+}

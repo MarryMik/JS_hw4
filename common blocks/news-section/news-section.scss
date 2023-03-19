@@ -5,9 +5,12 @@
 .news{
     @include padding(93, 0, 122.57,0);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     background-color: $background-color;
     position: relative;
     &__decoration{

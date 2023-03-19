@@ -91,58 +91,71 @@ function hideOrShow(elem){
 
      buttonLeft.addEventListener('click', function(){
         const arrayOfComments = document.getElementsByClassName("comment-box");
-            switch(true){
-                case Array.from(buttonLeft.classList).includes('stage1') : 
-                    buttonLeft.classList.add('stage3');
-                    buttonLeft.classList.remove('stage1');
-                    buttonRight.classList.add('stage3');
-                    buttonRight.classList.remove('stage1');
-                    switchCommentPage(3,arrayOfComments,"left");
-                    break;
-                case Array.from(buttonLeft.classList).includes('stage2'):
-                    buttonLeft.classList.add('stage1');
-                    buttonLeft.classList.remove('stage2');
-                    buttonRight.classList.add('stage1');
-                    buttonRight.classList.remove('stage2');
-                    switchCommentPage(1,arrayOfComments,"left");
-                    break;
-                case Array.from(buttonLeft.classList).includes('stage3'):
-                    buttonLeft.classList.add('stage2');
-                    buttonLeft.classList.remove('stage3');
-                    buttonRight.classList.add('stage2');
-                    buttonRight.classList.remove('stage3');
-                    switchCommentPage(2,arrayOfComments,"left");
-                    break;
-                
-            }
+        if(window.innerWidth<=1109){
+            buttonLClickMedium(arrayOfComments);
+        }if(window.innerWidth>=1109){
+            buttonLClick(arrayOfComments);
+        }
+        
      });
-
+     function buttonLClick(arrayOfComments){
+        switch(true){
+            case Array.from(buttonLeft.classList).includes('stage1') : 
+                buttonLeft.classList.add('stage3');
+                buttonLeft.classList.remove('stage1');
+                buttonRight.classList.add('stage3');
+                buttonRight.classList.remove('stage1');
+                switchCommentPage(3,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage2'):
+                buttonLeft.classList.add('stage1');
+                buttonLeft.classList.remove('stage2');
+                buttonRight.classList.add('stage1');
+                buttonRight.classList.remove('stage2');
+                switchCommentPage(1,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage3'):
+                buttonLeft.classList.add('stage2');
+                buttonLeft.classList.remove('stage3');
+                buttonRight.classList.add('stage2');
+                buttonRight.classList.remove('stage3');
+                switchCommentPage(2,arrayOfComments,"left");
+                break;
+            
+        }
+     };
+     function buttonRClick(arrayOfComments){
+        switch(true){
+            case Array.from(buttonRight.classList).includes('stage1') : 
+                buttonRight.classList.add('stage2');
+                buttonRight.classList.remove('stage1');
+                buttonLeft.classList.add('stage2');
+                buttonLeft.classList.remove('stage1');
+                switchCommentPage(1,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage2'):
+                buttonRight.classList.add('stage3');
+                buttonRight.classList.remove('stage2');
+                buttonLeft.classList.add('stage3');
+                buttonLeft.classList.remove('stage2');
+                switchCommentPage(2,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage3'):
+                buttonRight.classList.add('stage1');
+                buttonRight.classList.remove('stage3');
+                buttonLeft.classList.add('stage1');
+                buttonLeft.classList.remove('stage3');
+                switchCommentPage(3,arrayOfComments,"right");
+                break;
+        }
+     };
      buttonRight.addEventListener('click', function(){
         const arrayOfComments = document.getElementsByClassName("comment-box");
-            switch(true){
-                case Array.from(buttonRight.classList).includes('stage1') : 
-                    buttonRight.classList.add('stage2');
-                    buttonRight.classList.remove('stage1');
-                    buttonLeft.classList.add('stage2');
-                    buttonLeft.classList.remove('stage1');
-                    switchCommentPage(1,arrayOfComments,"right");
-                    break;
-                case Array.from(this.classList).includes('stage2'):
-                    buttonRight.classList.add('stage3');
-                    buttonRight.classList.remove('stage2');
-                    buttonLeft.classList.add('stage3');
-                    buttonLeft.classList.remove('stage2');
-                    switchCommentPage(2,arrayOfComments,"right");
-                    break;
-                case Array.from(this.classList).includes('stage3'):
-                    buttonRight.classList.add('stage1');
-                    buttonRight.classList.remove('stage3');
-                    buttonLeft.classList.add('stage1');
-                    buttonLeft.classList.remove('stage3');
-                    switchCommentPage(3,arrayOfComments,"right");
-                    break;
+            if(window.innerWidth<=1109){
+                buttonRClickMedium(arrayOfComments);
+            }if(window.innerWidth>=1109){
+                buttonRClick(arrayOfComments);
             }
-       
      });
     
      function switchCommentPage(stage,arrayOfComments, direction){
@@ -176,6 +189,142 @@ function hideOrShow(elem){
                 break;
         }
      }
+     function switchCommentPageMedium(stage,arrayOfComments, direction){
+        let d1;
+        let d2;
+        if(direction=="right"){
+            d1="none";
+            d2="block";
+        }else{
+            d1="block";
+            d2="none";
+        }
+        switch(true){
+            case stage===1:
+                arrayOfComments[0].style.display=d1;
+                arrayOfComments[1].style.display=d2;
+                break;
+            case stage===2:
+                arrayOfComments[1].style.display=d1;
+                arrayOfComments[2].style.display=d2;
+                break;
+            case stage===3:
+                arrayOfComments[2].style.display=d1;
+                arrayOfComments[3].style.display=d2;
+                break;
+            case stage===4:
+                arrayOfComments[3].style.display=d1;
+                arrayOfComments[4].style.display=d2;
+                break;
+            case stage===5:
+                arrayOfComments[4].style.display=d1;
+                arrayOfComments[5].style.display=d2;
+                break;
+            case stage===6:
+                arrayOfComments[5].style.display=d1;
+                arrayOfComments[0].style.display=d2;
+                break;
+            
+        }
+     }
+
+     function buttonLClickMedium(arrayOfComments){
+        switch(true){
+            case Array.from(buttonLeft.classList).includes('stage1') : 
+                buttonLeft.classList.add('stage6');
+                buttonLeft.classList.remove('stage1');
+                buttonRight.classList.add('stage6');
+                buttonRight.classList.remove('stage1');
+                switchCommentPageMedium(6,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage2'):
+                buttonLeft.classList.add('stage1');
+                buttonLeft.classList.remove('stage2');
+                buttonRight.classList.add('stage1');
+                buttonRight.classList.remove('stage2');
+                switchCommentPageMedium(1,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage3'):
+                buttonLeft.classList.add('stage2');
+                buttonLeft.classList.remove('stage3');
+                buttonRight.classList.add('stage2');
+                buttonRight.classList.remove('stage3');
+                switchCommentPageMedium(2,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage4'):
+                buttonLeft.classList.add('stage3');
+                buttonLeft.classList.remove('stage4');
+                buttonRight.classList.add('stage3');
+                buttonRight.classList.remove('stage4');
+                switchCommentPageMedium(3,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage5'):
+                buttonLeft.classList.add('stage4');
+                buttonLeft.classList.remove('stage5');
+                buttonRight.classList.add('stage4');
+                buttonRight.classList.remove('stage5');
+                switchCommentPageMedium(4,arrayOfComments,"left");
+                break;
+            case Array.from(buttonLeft.classList).includes('stage6'):
+                buttonLeft.classList.add('stage5');
+                buttonLeft.classList.remove('stage6');
+                buttonRight.classList.add('stage5');
+                buttonRight.classList.remove('stage6');
+                switchCommentPageMedium(5,arrayOfComments,"left");
+                break;
+            
+        }
+     };
+
+     function buttonRClickMedium(arrayOfComments){
+        switch(true){
+            case Array.from(buttonRight.classList).includes('stage1') : 
+                buttonRight.classList.add('stage2');
+                buttonRight.classList.remove('stage1');
+                buttonLeft.classList.add('stage2');
+                buttonLeft.classList.remove('stage1');
+                switchCommentPageMedium(1,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage2'):
+                buttonRight.classList.add('stage3');
+                buttonRight.classList.remove('stage2');
+                buttonLeft.classList.add('stage3');
+                buttonLeft.classList.remove('stage2');
+                switchCommentPageMedium(2,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage3'):
+                buttonRight.classList.add('stage4');
+                buttonRight.classList.remove('stage3');
+                buttonLeft.classList.add('stage4');
+                buttonLeft.classList.remove('stage3');
+                switchCommentPageMedium(3,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage4'):
+                buttonRight.classList.add('stage5');
+                buttonRight.classList.remove('stage4');
+                buttonLeft.classList.add('stage5');
+                buttonLeft.classList.remove('stage4');
+                switchCommentPageMedium(4,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage5'):
+                buttonRight.classList.add('stage6');
+                buttonRight.classList.remove('stage5');
+                buttonLeft.classList.add('stage6');
+                buttonLeft.classList.remove('stage5');
+                switchCommentPageMedium(5,arrayOfComments,"right");
+                break;
+            case Array.from(buttonRight.classList).includes('stage6'):
+                buttonRight.classList.add('stage1');
+                buttonRight.classList.remove('stage6');
+                buttonLeft.classList.add('stage1');
+                buttonLeft.classList.remove('stage6');
+                switchCommentPageMedium(6,arrayOfComments,"right");
+                break;
+        }
+     };
+
+     
+
 
 
 

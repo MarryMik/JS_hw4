@@ -1,0 +1,86 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+
+.burger-menu{
+
+    &__button{
+        position: fixed;
+        top: find_size(40, 100vh, $height-mini);
+        right: find_size(30, 100vw, $width-mini);
+        z-index: 30;
+        @include size(40,40, $width-mini, $height-mini);
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: 0.4s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    &__line, &__line::before, &__line::after{
+        position: absolute;
+        @include size(30,3, $width-mini, $height-mini);
+        background-color: $butn-color;
+        transition: 0.4s;
+    }
+    &__line{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &::before{
+            content: '';
+            top: find_size(-12, 100vh, $height-mini);
+        }
+        &::after{
+            content: '';
+            top: find_size(12, 100vh, $height-mini);
+        }
+    }
+
+    &__active &__line{
+        background-color: transparent;
+        &::before{
+            top: 0;
+            transform: rotate(45deg);
+        }
+        &::after{
+            top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+    &__nav{
+        padding-top: find_size(72, 100vh, $height-mini);
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background-color: $butn-signUp-color;
+        overflow-y: auto;
+        right: -100%;
+        transition: 0.8s;
+    }
+    &__active &__nav{
+        right: 0;
+        transition: 0.4s;
+    }
+    &__overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+    }
+    &__active &__overlay{
+        display: block;
+    }
+    
+}
+.menu__item{
+    @include padding(18, 35,18,35, $width-mini, $height-mini);
+    border-bottom: 1px solid #fff;
+}

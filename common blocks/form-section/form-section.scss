@@ -4,9 +4,11 @@
 
 .form{
     @include padding(80,0,92,0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__header{
         font-family: Poppins;
         font-weight: 500;
@@ -34,7 +36,7 @@
     &__inputs-wrap{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 50px;
+        grid-template-rows: 1fr 1fr find_size(50,100vh, $height-main);
     }
     &__input-text{
         background-color: $inputs-bgr;
@@ -85,7 +87,7 @@
         grid-column: 1/ span 2;
         text-align: center;
         width: 100%;
-        height: 50px;
+        height: find_size(50,100vh, $height-main);
         color:  rgb(132, 20, 20);
         font-family: OpenSans;
         font-weight: 600;

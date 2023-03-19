@@ -117,7 +117,7 @@
   width: 5.04375vw;
   height: 2.9027777778vh;
   background-color: #CAA892;
-  border-radius: 15px 0px;
+  border-radius: 0.9375rem 0px;
   border: none;
 }
 .nav-bar__button-text {
@@ -126,4 +126,8 @@
   font-weight: 600;
   font-size: 1.4814814815vh;
   line-height: 2.037037037vh;
+}
+
+.burger-menu {
+  display: none;
 }/*# sourceMappingURL=nav-bar.css.map */

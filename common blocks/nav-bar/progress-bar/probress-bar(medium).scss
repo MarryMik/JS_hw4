@@ -1,0 +1,14 @@
+@import "../../fonts";
+@import "../../variables";
+@import "../../functions";
+
+.progress-bar{
+    height: find_size(5, 100vh, $height-medium);
+    background-color: $butn-color;
+    width: 0%;
+    &__wrap{
+        width: 100%;
+        height: find_size(5, 100vh, $height-medium);
+        background-color: $divider-color;
+    }
+}

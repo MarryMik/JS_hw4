@@ -4,11 +4,16 @@
 
 .testimonials{
     @include padding(133,0,0,0);
-    @include size(0, 688);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: fit-content;
+    &__wrap{
+        @include size(0, 688);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     &__wrapper-content{
         display: flex;
         flex-direction: column;
@@ -44,7 +49,7 @@
         @include size(30,30);
         border-radius: 50%;
         background: #FFFFFF;
-        box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: find_size(-1,100vh,$height-main) find_size(3,100vw,$width-main) find_size(10,100vh,$height-main) rgba(0, 0, 0, 0.3);
         &_right>img{
             transform: rotate(180deg);
         }
