@@ -1,0 +1,129 @@
+@import "../fonts";
+@import "../variables";
+@import "../functions";
+
+.pre-loader{
+    @include size($width-main, $height-main);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    
+}
+.horizont{
+    position: relative;
+    width: find_size(108,100vw,$width-main);
+    box-sizing: content-box;
+    border-width: find_size(100,100vh,$height-main) find_size(32,100vw,$width-main) 0;
+    border-style: solid;
+    border-color:  transparent;
+    &:before{
+        content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: find_size(-170,100vh,$height-main);
+      left: find_size(-32,100vw,$width-main);
+      border-width: 0 find_size(86,100vw,$width-main) find_size(70,100vh,$height-main);
+      border-style: solid;
+      border-color: transparent;
+    }
+    animation: rotate2 5s infinite;
+}
+.flower{
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include size(107,108);
+        border-radius: 50%;
+        position: absolute;
+        
+        &_one{
+            left: find_size(-85,100vw,$width-main);
+            top: find_size(-153,100vh,$height-main);
+        }
+        &_two{
+            left: find_size(1,100vw,$width-main);
+            top: find_size(-223,100vh,$height-main);
+        }
+        &_three{
+            left: find_size(86,100vw,$width-main);
+            top: find_size(-153,100vh,$height-main);
+        }
+        &_four{
+            left: find_size(-53,100vw,$width-main);
+            top: find_size(-52,100vh,$height-main);
+        }
+        &_five{
+            left: find_size(54,100vw,$width-main);
+            top: find_size(-52,100vh,$height-main);
+        }
+    }
+    position: relative;
+    @include size(102,103);
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    &__leaf{
+        position: absolute;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        @include size(31.5,45);
+        background: linear-gradient(to top, rgb(255, 0, 162), rgba(160, 7, 160, 0.459));
+
+        &_one{
+            left: find_size(35,100vw,$width-main);
+            top: find_size(59.5,100vh,$height-main);
+        }
+        &_two{
+            left: find_size(18,100vw,$width-main);
+            top: find_size(4,100vh,$height-main);
+            transform: rotate(144deg);
+        }
+        &_three{
+            left: find_size(7,100vw,$width-main);
+            top: find_size(38,100vh,$height-main);
+            transform: rotate(72deg);
+        }
+        &_four{
+            left: find_size(53.5,100vw,$width-main);
+            top: find_size(4,100vh,$height-main);
+            transform: rotate(216deg);
+        }
+        &_five{
+            left: find_size(63,100vw,$width-main);
+            top: find_size(38,100vh,$height-main);
+            transform: rotate(288deg);
+        }
+    }
+    &__center{
+      border-radius: 50%;
+      background-color: rgb(231, 215, 152);
+      @include size(30,30);   
+      position: absolute;  
+      z-index: 3; 
+      left: find_size(36,100vw,$width-main);
+      top: find_size(36,100vh,$height-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-2{
+        @include size(10,10);
+        border-radius: 50%;
+        background-color: rgb(9, 7, 1);;
+      }
+    }
+    animation: rotate1 5s infinite;
+}
+@keyframes rotate1{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+  }
+
+  @keyframes rotate2{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(-360deg)}
+  }
+
+  .none{
+    display: none;
+  }

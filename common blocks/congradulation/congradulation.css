@@ -1,0 +1,116 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Monda;
+  src: url("/fonts/Monda/Monda-Regular.ttf");
+}
+.congratulation {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(circle, rgb(163, 229, 187) 0%, rgb(94, 174, 127) 51%, rgb(55, 128, 107) 100%);
+}
+.congratulation__wrap {
+  width: 31.25vw;
+  height: 55.5555555556vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(157, 127, 255);
+  -webkit-box-shadow: 8.3333333333vw 14.8148148148vh 0 0 rgba(6, 3, 3, 0.208);
+          box-shadow: 8.3333333333vw 14.8148148148vh 0 0 rgba(6, 3, 3, 0.208);
+  -webkit-animation: ColorPulse 5s infinite;
+          animation: ColorPulse 5s infinite;
+}
+.congratulation__wrap-text {
+  width: 26.0416666667vw;
+  height: 46.2962962963vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(127, 255, 212);
+}
+.congratulation__text {
+  font-family: Monda;
+  font-size: 3.7037037037vh;
+  line-height: 4.6296296296vh;
+  font-weight: 700;
+  text-align: center;
+  color: #201889;
+}
+
+@-webkit-keyframes ColorPulse {
+  0% {
+    background-color: rgb(172, 230, 215);
+    -webkit-box-shadow: 8.3333333333vw 14.8148148148vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 8.3333333333vw 14.8148148148vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+  20% {
+    background-color: rgb(100, 100, 100);
+    -webkit-box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+  60% {
+    background-color: rgb(157, 127, 255);
+    -webkit-box-shadow: 4.1666666667vw 7.4074074074vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 4.1666666667vw 7.4074074074vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+  80% {
+    background-color: rgb(55, 128, 107);
+    -webkit-box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+}
+
+@keyframes ColorPulse {
+  0% {
+    background-color: rgb(172, 230, 215);
+    -webkit-box-shadow: 8.3333333333vw 14.8148148148vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 8.3333333333vw 14.8148148148vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+  20% {
+    background-color: rgb(100, 100, 100);
+    -webkit-box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+  60% {
+    background-color: rgb(157, 127, 255);
+    -webkit-box-shadow: 4.1666666667vw 7.4074074074vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 4.1666666667vw 7.4074074074vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+  80% {
+    background-color: rgb(55, 128, 107);
+    -webkit-box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+            box-shadow: 6.25vw 11.1111111111vh 0 0 rgba(6, 3, 3, 0.208);
+  }
+}/*# sourceMappingURL=congradulation.css.map */

@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="common blocks/footer/footer.css">
     <link rel="stylesheet" href="common blocks/footer/social-board/social-board.css">
     <link rel="stylesheet" href="common blocks/nav-bar/progress-bar/progress-bar.css">
+    <link rel="stylesheet" href="common blocks/pre-loader/pre-loader.css">
+    <link rel="stylesheet" href="common blocks/congradulation/congradulation.css">
     
 </head>
 <body>
-    <div class="nav-bar__wrap" id="nav">
+    <div class="nav-bar__wrap section" id="nav">
         <nav class="nav-bar">
             <img class="nav-bar__logo" src="img/Logo.svg">
             <div class="nav-bar__links-wrap">
@@ -42,7 +44,7 @@
             <div class="progress-bar" id="scroll-progress"></div>
         </div>
     </div>
-    <div class="ad-section">
+    <div class="ad-section section">
         <div class="ad__left-wrap">
             <a class="ad__tag-anchor" name="modern_interior"><p class="ad__tag-text">MODERN INTERIOR</p></a>
             <div class="ad__header-wrap">
@@ -64,7 +66,7 @@
         <img class="ad__decoration" src="img/decoration-ad.svg">
     </div>
     
-    <div class="our-service-section">
+    <div class="our-service-section section">
         <a class="our-service__anchor" name="what_we_do"><p class="our-service__tag-text">WHAT WE DO</p></a>
         <p class="our-service__header">Our Service</p>
         <div class="our-service__filters">
@@ -78,7 +80,7 @@
         <img class="our-service__decoration" src="img/decoration-whatwedo.svg">
     </div>
 
-    <div class="about-us">
+    <div class="about-us section">
         <div class="about-us__block about-us__block_primary">
             <div class="about-us__picture-wrap">
                 <img class="about-us__picture" src="img/about-us-img.svg">
@@ -125,7 +127,7 @@
         <img class="about-us__decoration about-us__decoration_secondary" src="img/decoration-aboutus2.svg">
     </div>
     
-    <div class="compl-work">
+    <div class="compl-work section">
         <a name="project"></a>
         <div class="compl-work__header-wrap">
             <p class="compl-work__header">3000+ Completed Work<br>
@@ -155,7 +157,7 @@
         <img class="compl-work__decoration" src="img/decoration-complwork.svg">
     </div>
 
-    <div class="testimonials">
+    <div class="testimonials section">
         <a class="testimonials__anchor" name="testimonials">
             <p class="testimonials__tag">TESTIMONIALS</p>
         </a>
@@ -176,7 +178,7 @@
         </div>
     </div>
 
-    <div class="news">
+    <div class="news section">
         <a class="news__anchor" name="latest_news">
             <p class="news__tag">LATEST NEWS</p>
         </a>
@@ -223,22 +225,23 @@
         <img class="news__decoration" src="img/decoration-latestnews.svg">
     </div>
 
-    <div class="form">
+    <div class="form section">
         <p class="form__header">DON’T FORGET TO SIGN UP</p>
         <div class="form__line"></div>
         <div class="form__text-wrap">
             <p class="form__text">Find out early about all upcoming promotions and new product releases with
                 our newsletter.</p>
         </div>
-        <div class="form__inputs-wrap">
-            <input type="text" class="form__name form__input-text" required placeholder="Enter your name.....">
-            <input type="text" class="form__surname form__input-text" required placeholder="Enter your surname.....">
-            <input type="email" class="form__email form__input-text" required placeholder="Enter your email.....">
-            <input type="submit" class="form__button" value="SUBSCRIBE">
-        </div>
+        <form class="form__inputs-wrap">
+            <input type="text" name="input_name" class="form__name form__input-text"  required placeholder="Enter your name.....">
+            <input type="text" name="input_surname" class="form__surname form__input-text"  required placeholder="Enter your surname.....">
+            <input type="text" name="input_email" class="form__email form__input-text" required placeholder="Enter your email.....">
+            <p class="form__error-message"></p>
+            <button type="submit" name="button" class="form__button" >SUBSCRIBE</button>
+        </form>
     </div>
     
-    <div class="footer">
+    <div class="footer section">
         <img class="footer__decoration" src="img/decoration-footer.svg">
         <div class="footer__main-part">
             <div class="footer__logo-section">
@@ -301,10 +304,91 @@
             <p class="footer__rights-info">Copyright @&nbsp;</p><p class="footer__date footer__rights-info"></p>&nbsp;<p class="footer__special-text footer__rights-info">Brandoxide</p><p class="footer__rights-info">.all right reserved</p>
         </div>
     </div>
+
+    <div class="pre-loader">
+        <div class="horizont"> 
+            <div class="flower__wrap flower__wrap_five">
+                <div class="flower flower_one">
+                    <div class="flower__leaf flower__leaf_one" ></div>
+                    <div class="flower__leaf flower__leaf_two" ></div>
+                    <div class="flower__leaf flower__leaf_three" ></div>
+                    <div class="flower__leaf flower__leaf_four" ></div>
+                    <div class="flower__leaf flower__leaf_five" ></div>
+                    <div class="flower__center">
+                        <div class="flower__center-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flower__wrap flower__wrap_one">
+                <div class="flower flower_one">
+                    <div class="flower__leaf flower__leaf_one" ></div>
+                    <div class="flower__leaf flower__leaf_two" ></div>
+                    <div class="flower__leaf flower__leaf_three" ></div>
+                    <div class="flower__leaf flower__leaf_four" ></div>
+                    <div class="flower__leaf flower__leaf_five" ></div>
+
+                    <div class="flower__center">
+                        <div class="flower__center-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flower__wrap flower__wrap_two">
+                <div class="flower flower_one">
+                    <div class="flower__leaf flower__leaf_one" ></div>
+                    <div class="flower__leaf flower__leaf_two" ></div>
+                    <div class="flower__leaf flower__leaf_three" ></div>
+                    <div class="flower__leaf flower__leaf_four" ></div>
+                    <div class="flower__leaf flower__leaf_five" ></div>
+
+                    <div class="flower__center">
+                        <div class="flower__center-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flower__wrap flower__wrap_three">
+                <div class="flower flower_one">
+                    <div class="flower__leaf flower__leaf_one" ></div>
+                    <div class="flower__leaf flower__leaf_two" ></div>
+                    <div class="flower__leaf flower__leaf_three" ></div>
+                    <div class="flower__leaf flower__leaf_four" ></div>
+                    <div class="flower__leaf flower__leaf_five" ></div>
+
+                    <div class="flower__center">
+                        <div class="flower__center-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flower__wrap flower__wrap_four">
+                <div class="flower flower_one">
+                    <div class="flower__leaf flower__leaf_one" ></div>
+                    <div class="flower__leaf flower__leaf_two" ></div>
+                    <div class="flower__leaf flower__leaf_three" ></div>
+                    <div class="flower__leaf flower__leaf_four" ></div>
+                    <div class="flower__leaf flower__leaf_five" ></div>
+
+                    <div class="flower__center ">
+                        <div class="flower__center-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="congratulation">
+        <div class="congratulation__wrap">
+            <div class="congratulation__wrap-text">
+                <p class="congratulation__text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="common blocks/pre-loader/pre-loader.js"></script>
     <script src="common blocks/nav-bar/progress-bar/progress-bar.js"></script>
     <script src="common blocks/our-service-section/our-service-section.js"></script>
     <script src="common blocks/testimonials-section/testimonials.js"></script>
     <script src="common blocks/news-section/new-section.js"></script>
     <script src="common blocks/footer/footer.js"></script>
+    <script src="common blocks/congradulation/congradulation.js"></script>
+    <script src="common blocks/form-section/form.js"></script>    
 </body>
 </html>
